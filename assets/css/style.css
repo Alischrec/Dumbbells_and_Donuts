@@ -1,0 +1,61 @@
+/* INDEX.HTML START */
+
+#index{
+    background-color: #F4F2F0;
+ 
+}
+
+#title{
+    text-align: center;
+}
+
+.welcomeBack{
+    display: none;
+    text-align: center;
+}
+
+.translucent-form-overlay {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.8);
+    padding: 20px;
+    color: black;
+  }
+  
+  .translucent-form-overlay .columns.row {
+    display: block;
+  }
+  
+  .translucent-form-overlay h3, .translucent-form-overlay label {
+    color: black;
+  }
+  
+  .translucent-form-overlay input, .translucent-form-overlay select {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input::-webkit-input-placeholder {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input:-ms-input-placeholder {
+    color: #8a8a8a;
+  }
+  
+  .translucent-form-overlay input::placeholder {
+    color: #8a8a8a;
+  }
+
+  #workoutBtn{
+    width: 200px;
+    height: 40px;
+  }
+  
+  #nutritionBtn{
+    width: 200px;
+    height: 40px;
+  }
+
+  
+
+  /* INDEX.HTML STOP */
