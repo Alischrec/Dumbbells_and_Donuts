@@ -47,6 +47,27 @@ let totalCarb = 0;
 let totalSugar = 0;
 let totalFiber = 0;
 
+let last = JSON.parse( localStorage.getItem('lastTotal'));
+let todayLast = False;
+let today = new Date();
+let todayDate = today.toLocaleDateString()
+if (last!==undefined){
+  if (last.day == todayDate){
+    todayLast = True;
+    totalCal = last.cal;
+    totalPr = last.pr;
+    totalFat = last.fat;
+    totalCarb = last.carb;
+    totalSugar = last.sug;
+    totalFiber = last.fib;
+  }
+};
+
+
+
+///add parsing of local storage
+// if day === new Date().toLocalString date: total parse from that object
+
 function renderTotal(){
   /**
        *Calories
@@ -182,11 +203,27 @@ $("#find-food").on("click", function(event) {
 
 $("#total-save").on("click", function(event) {
   event.preventDefault();
+  let dt = new Date();
+  let dateSave = dt.toLocaleDateString();
   let totSaveCal = $("#total-cal").text();
   let totSavePr = $("#total-pr").text();
   let totSaveFat = $("#total-fat").text();
   let totSaveCarb = $("#total-carb").text();
   let totSaveSug = $("#total-sugar").text();
   let totSaveFib = $("#total-fiber").text();
+  console.log("=====Date====");
+  console.log(dateSave);
+   /* I need logic how I save history
+  I save date and cal(all nutr)
+  if lastTotal is today , than I rewrite last elem in arr, else I add new
+  and to it before I save last total
+  */
   
-})
+  
+
+  let objS = {'day':dateSave,'cal':totSaveCal,'pr':totSavePr, 'fat':totSaveFat,'carb':totSaveCarb,'sug':totSaveSug,'fib':totSaveFib};
+  localStorage.setItem("lastTotal",JSON.stringify(objS));
+  
+
+ 
+});
