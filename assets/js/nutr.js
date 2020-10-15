@@ -11,6 +11,8 @@ $.ajax({
     console.log(response);})*/
 
     //// create data for post request
+
+  /*  
 let data_ex = {
   "ingredients": [
     {
@@ -19,7 +21,7 @@ let data_ex = {
       "foodId": "food_a1gb9ubb72c7snbuxr3weagwv0dd"
     }
   ]
-};
+}; */
 
 AJAX_POST_URL = "https://api.edamam.com/api/food-database/v2/nutrients?app_id="+app_id+"&app_key="+APIKey;
 /* example of nutrion query
@@ -176,4 +178,15 @@ $("#find-food").on("click", function(event) {
     
   }).fail(function(error){console.log(error)});
 
+})
+
+$("#total-save").on("click", function(event) {
+  event.preventDefault();
+  let totSaveCal = $("#total-cal").text();
+  let totSavePr = $("#total-pr").text();
+  let totSaveFat = $("#total-fat").text();
+  let totSaveCarb = $("#total-carb").text();
+  let totSaveSug = $("#total-sugar").text();
+  let totSaveFib = $("#total-fiber").text();
+  
 })
