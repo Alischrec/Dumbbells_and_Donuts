@@ -10,7 +10,7 @@
 }
 
 .welcomeBack{
-    display: none;
+    /* display: none; */
     text-align: center;
 }
 
@@ -55,6 +55,15 @@
     width: 200px;
     height: 40px;
   }
+
+  .hide {
+    display:none;
+  }
+
+  .show {
+    display: block;
+  }
+
 
   
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+​
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +8,26 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css"
         integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
-
+​
 </head>
-
+​
 <body id='index'>
     <div class="translucent-form-overlay">
         <form>
             <h3 id='title'>Welcome to <br> Dumbbells & Donuts!</h3>
-            <h3 class='welcomeBack'>Welcome back to <br> Dumbbells & Donuts!
-                <h5 class='welcomeBack'>Update your stats below!</h5>
+            <h3 class="hide welcomeBack">Welcome back to <br> Dumbbells & Donuts!
+                <h5 class="hide welcomeBack">Update your stats below!</h5>
                 <div id='currentStats'></div>
             </h3>
             <div id='newUser'>
                 <div class="row columns">
                     <label>Name
-                        <input type="text" name="name" placeholder="Enter your name here">
+                        <input type="text" name="fullName" id='fullName' placeholder="Enter your name here">
                     </label>
                 </div>
                 <div class="row columns">
                     <label>Email
-                        <input type="text" name="email" placeholder="Enter your email here">
+                        <input type="text" name="email" id='email' placeholder="Enter your email here">
                     </label>
                 </div>
                 <div class="row">
@@ -62,23 +62,34 @@
                         </select>
                     </div>
                 </div>
+                <div id='validation_height'></div>
                 <div class="row columns">
                     <label>Weight
-                        <input type="text" name="weight" placeholder="Enter your weight in lbs">
+                        <input type="text" name="weightinlbs" id="weightinlbs" placeholder="Enter your weight in lbs">
                     </label>
+                    <div id='validation_weight'></div>
+                    <button type="button" class="primary button expanded search-button" id='submit'>
+                        Submit
+                      </button>
                 </div>
             </div>
-            <p>What would you like to work on today?</p>
-            <button type="button" class="primary button expanded search-button" id='workoutBtn'>
-                Workout!
-            </button>
-            <button type="button" class="primary button expanded search-button" id='nutritionBtn'>
-                Nutrition!
-            </button>
         </form>
+        <div id="selectnextPage" class="hide">
+            <p class='select'>What would you like to work on today?</p>
+            <a class="button secondary" href="workout.html" id='workoutBtn'>Workout!</a>
+            <a class="button secondary" href="nutrition.html" id='nutritionBtn'>Nutrition!</a>
+            </div>
     </div>
-
-
+   
+​
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Foundation JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src='assets/js/script.js'></script>
+​
 </body>
-
+​
 </html>
