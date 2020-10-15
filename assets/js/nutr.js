@@ -48,18 +48,18 @@ let totalSugar = 0;
 let totalFiber = 0;
 
 let last = JSON.parse( localStorage.getItem('lastTotal'));
-let todayLast = False;
+let todayLast = false;
 let today = new Date();
 let todayDate = today.toLocaleDateString()
-if (last!==undefined){
+if (last){
   if (last.day == todayDate){
-    todayLast = True;
-    totalCal = last.cal;
-    totalPr = last.pr;
-    totalFat = last.fat;
-    totalCarb = last.carb;
-    totalSugar = last.sug;
-    totalFiber = last.fib;
+    todayLast = true;
+    totalCal = parseFloat(last.cal);
+    totalPr = parseFloat(last.pr);
+    totalFat = parseFloat(last.fat);
+    totalCarb = parseFloat(last.carb);
+    totalSugar = parseFloat(last.sug);
+    totalFiber = parseFloat(last.fib);
   }
 };
 
@@ -223,7 +223,7 @@ $("#total-save").on("click", function(event) {
 
   let objS = {'day':dateSave,'cal':totSaveCal,'pr':totSavePr, 'fat':totSaveFat,'carb':totSaveCarb,'sug':totSaveSug,'fib':totSaveFib};
   localStorage.setItem("lastTotal",JSON.stringify(objS));
-  
+
 
  
 });
