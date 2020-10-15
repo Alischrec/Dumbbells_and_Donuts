@@ -114,6 +114,7 @@
         <div class="card-section">
           <!-- <a href="#">7mins</a> -->
           <p>7 mins</p>
+          <!-- <a class="button expanded" href="#">Such Expand</a> -->
         </div>
       </div>
       <div class="card cell small-2">
@@ -142,7 +143,7 @@
       <div class="card cell small-4">
         <!-- <img src="./img/yoga.jpg"> -->
         <div class="card-section">
-          <p> text area Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati ea consequatur eligendi dolores dolore quasi hic accusamus deleniti quia. Porro, reiciendis. Ducimus, placeat quod officia dolor optio id inventore.<span>calories</span></p>
+          <p> text area Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati ea consequatur eligendi dolores dolore quasi hic accusamus deleniti quia. Porro, reiciendis. <span>###calories###</span> Ducimus, placeat quod officia dolor optio id inventore.</p>
         </div>
       </div>
     </div>
@@ -150,31 +151,31 @@
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
       <div class="card cell small-2">
-          <iframe src="//www.youtube.com/embed/r7xsYgTeM2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="//www.youtube.com/embed/r7xsYgTeM2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video 1</iframe>
         <div class="card-section">
           <button class="hollow button secondary" href="#">Add to your library</button>
         </div>
       </div>
       <div class="card cell small-2">
-        <img src="placeholder">
+        <iframe>Video 2</iframe>
         <div class="card-section">
           <button class="hollow button secondary" href="#">Add to your library</button>
         </div>
       </div>
       <div class="card cell small-2">
-        <img src="placeholder">
+        <iframe>Video 3</iframe>
         <div class="card-section">
           <button class="hollow button secondary" href="#">Add to your library</button>
         </div>
       </div>
       <div class="card cell small-2">
-        <img src="placeholder">
+        <iframe>Video 4</iframe>
         <div class="card-section">
           <button class="hollow button secondary" href="#">Add to your library</button>
         </div>
       </div>
       <div class="card cell small-2">
-        <img src="placeholder">
+        <iframe>Video 5</iframe>
         <div class="card-section">
           <button class="hollow button secondary" href="#">Add to your library</button>
         </div>
@@ -183,12 +184,22 @@
     </div>
 
     <div class="grid-x grid-padding-x">
+      <div class="cell small-4"></div>
+      <div class="card cell small-4">
+        <h5>Don't have time today? <br> Schedule it into your future!</h5>
+        <div class="card-section">
+          <form action="/action_page.php">
+            <label for="futureWorkoutTime">Workout Day & Time:</label>
+            <input type="datetime-local" id="workouttime" name="workouttime">
+            <button class="hollow button secondary" href="#">Add to Calender</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
-      <form action="/action_page.php">
-        <label for="futureWorkoutTime">Workout Day & Time:</label>
-        <input type="datetime-local" id="workouttime" name="workouttime">
-        <button class="hollow button secondary" href="#">Add to Calender</button>
-      </form>
+      
     </div>
 
   <!-- Compressed JavaScript -->
