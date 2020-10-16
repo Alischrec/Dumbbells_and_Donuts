@@ -12,7 +12,7 @@ function drawChart() {
 
   var options = {
     title: 'Calories',
-    curveType: 'function',
+    //curveType: 'function',
     legend: { position: 'bottom' }
   };
 
