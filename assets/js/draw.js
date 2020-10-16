@@ -11,7 +11,7 @@ function drawChart() {
   var data = google.visualization.arrayToDataTable(table);
 
   var options = {
-    title: 'Company Performance',
+    title: 'Calories',
     curveType: 'function',
     legend: { position: 'bottom' }
   };
