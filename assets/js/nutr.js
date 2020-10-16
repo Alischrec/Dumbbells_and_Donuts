@@ -151,11 +151,26 @@ $("#find-food").on("click", function(event) {
       let cal = nutr.ENERC_KCAL;
       console.log(cal);
       let calorie =cal.quantity;
-      let proteins = nutr.PROCNT.quantity;
-      let fat = nutr.FAT.quantity;
-      let carb = nutr.CHOCDF.quantity;
-      let sugar = nutr.SUGAR.quantity;
-      let fiber = nutr.FIBTG.quantity;
+      
+      let proteins = 0 ;
+      if(nutr.PROCNT){
+        proteins = nutr.PROCNT.quantity;}
+
+      let fat = 0;
+      if (nutr.FAT){
+        fat = nutr.FAT.quantity;}
+      
+      let carb = 0
+      if(nutr.CHOCDF){
+        carb = nutr.CHOCDF.quantity;}
+      
+      let sugar = 0;
+      if(nutr.SUGAR){
+        sugar = nutr.SUGAR.quantity;}
+      
+      let fiber = 0;
+      if(nutr.FIBTG){
+        fiber = nutr.FIBTG.quantity;}
       /**
        *Calories
         Protein
