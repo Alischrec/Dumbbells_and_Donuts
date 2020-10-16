@@ -77,12 +77,12 @@ function renderTotal(){
         Sugar
         Fiber
        */
-  $("#total-cal").text(totalCal);
-  $("#total-pr").text(totalPr);
-  $("#total-fat").text(totalFat);
-  $("#total-carb").text(totalCarb);
-  $("#total-sugar").text(totalSugar);
-  $("#total-fiber").text(totalFiber);
+  $("#total-cal").text(totalCal.toFixed(3));
+  $("#total-pr").text(totalPr.toFixed(3));
+  $("#total-fat").text(totalFat.toFixed(3));
+  $("#total-carb").text(totalCarb.toFixed(3));
+  $("#total-sugar").text(totalSugar.toFixed(3));
+  $("#total-fiber").text(totalFiber.toFixed(3));
 }
 renderTotal()
 
@@ -191,17 +191,17 @@ $("#find-food").on("click", function(event) {
       let foodCol = $("<td>");
       foodCol.text(food);
       let calCol = $("<td>");
-      calCol.text(calorie);
+      calCol.text(calorie.toFixed(3));
       let prCol = $("<td>");
-      prCol.text(proteins);
+      prCol.text(proteins.toFixed(3));
       let fatCol = $("<td>");
-      fatCol.text(fat);
+      fatCol.text(fat.toFixed(3));
       let carbCol = $("<td>");
-      carbCol.text(carb);
+      carbCol.text(carb.toFixed(3));
       let sugarCol = $("<td>");
-      sugarCol.text(sugar);
+      sugarCol.text(sugar.toFixed(3));
       let fiberCol = $("<td>");
-      fiberCol.text(fiber);
+      fiberCol.text(fiber.toFixed(3));
       new_row.append(foodCol,calCol,prCol,fatCol,carbCol,sugarCol,fiberCol);
       $("#food-view").append(new_row);
       renderTotal();
