@@ -98,9 +98,16 @@ $("#find-food").on("click", function(event) {
   }).done(function(response) {
       
     console.log(response);
-    let nutr = response.parsed[0].food.nutrients
+    //let nutr = response.parsed[0].food.nutrients
     let parsed = response.parsed;
     let ingr = [];
+    if (parsed.length==0){
+      $("#no-food").text("Sorry, I didn't find such food");
+      $("#no-food").attr("style","color:red");
+    }
+    else{
+      $("#no-food").empty();
+    }
     parsed.forEach(function(el) {
       console.log(el.food.foodId);
       console.log(el.food.nutrients.ENERC_KCAL);
