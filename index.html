@@ -5,32 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dumbbells & Donuts</title>
-    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css"
-        integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
-
+    integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
+    <link href=“https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap” rel=“stylesheet”>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 
-<body id='index'>
-    <div class="translucent-form-overlay">
-        <form>
-            <h3 id='title'>Welcome to <br> Dumbbells & Donuts!</h3>
-            <h3 class='welcomeBack'>Welcome back to <br> Dumbbells & Donuts!
-                <h5 class='welcomeBack'>Update your stats below!</h5>
-                <div id='currentStats'></div>
-            </h3>
-            <div id='newUser'>
-                <div class="row columns">
+<body>
+
+    <div class="container" style="width: 500px; height: 700px">
+        <div class='row'>
+        <h3 id='title'> <br>Welcome to <br> Dumbbells & Donuts!</h3>
+        <h3 class='welcomeBack hide'>Welcome back to <br> Dumbbells & Donuts!
+            <h5 class='welcomeBack hide'>Update your stats below!</h5>
+            <div id='currentStats'></div>
+        </h3>
+    </div>
+        <div class="card-section">
+            <div id='newUser' class="columns small-12 small-centered large-centered">
+                <div class="columns small-12 small-centered">
                     <label>Name
-                        <input type="text" name="name" placeholder="Enter your name here">
+                        <input type="text" name="name" id='fullName' placeholder="Enter your name here">
                     </label>
                 </div>
-                <div class="row columns">
+                <div class="columns small-12 small-centered">
                     <label>Email
-                        <input type="text" name="email" placeholder="Enter your email here">
+                        <input type="text" name="email" id='email' placeholder="Enter your email here">
                     </label>
                 </div>
-                <div class="row">
+                <div class="columns small-12 small-centered">
                     <label class="columns small-12">Height</label>
                     <div class="columns small-6">
                         <select name="Height" id="heightFoot">
@@ -62,22 +67,33 @@
                         </select>
                     </div>
                 </div>
-                <div class="row columns">
+                <div id='validation_height'></div>
+                <div class="columns small-12 small-centered">
                     <label>Weight
-                        <input type="text" name="weight" placeholder="Enter your weight in lbs">
+                        <input id='weightinlbs' type="text" name="weight" placeholder="Enter your weight in lbs">
                     </label>
+                    <div id='validation_weight'></div>
+                    <button type="button" class="primary button expanded search-button" id='submit'>
+                        Submit
+                    </button>
                 </div>
             </div>
-            <p>What would you like to work on today?</p>
-            <button type="button" class="primary button expanded search-button" id='workoutBtn'>
-                Workout!
-            </button>
-            <button type="button" class="primary button expanded search-button" id='nutritionBtn'>
-                Nutrition!
-            </button>
-        </form>
+        </div>
+        <div id='selectNextPage' class='hide'>
+            <p class='select'>What would you like to work on today?</p>
+            <a class="button secondary" href="assets/workout.html" id='workoutBtn'>Workout!</a>
+            <a class="button secondary" href="assets/nutrition.html" id='nutritionBtn'>Nutrition!</a>
+        </div>
     </div>
 
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Foundation JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src='assets/js/script.js'></script>
 
 </body>
 
