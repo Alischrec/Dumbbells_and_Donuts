@@ -223,7 +223,24 @@ $("#total-save").on("click", function(event) {
 
   let objS = {'day':dateSave,'cal':totSaveCal,'pr':totSavePr, 'fat':totSaveFat,'carb':totSaveCarb,'sug':totSaveSug,'fib':totSaveFib};
   localStorage.setItem("lastTotal",JSON.stringify(objS));
+  let calHist = JSON.parse(localStorage.getItem("calHist"));
+  let daysHist = JSON.parse(localStorage.getItem("daysHist"));
+  if (!calHist){
+    calHist = [];
+    daysHist = [];
+  }
+  if (todayLast){
+    /// update last element in calHist and daysHist
+    calHist[calHist.length -1] = totSaveCal;
+    daysHist[daysHist.length-1] = dateSave;
+  }
+  else{
+    /// add new element
+    calHist.push(totSaveCal);
+    daysHist.push(dateSave);
+    todayLast = true;
 
-
- 
+  }
+ localStorage.setItem("calHist",JSON.stringify(calHist));
+ localStorage.setItem("daysHist",JSON.stringify(daysHist));
 });
