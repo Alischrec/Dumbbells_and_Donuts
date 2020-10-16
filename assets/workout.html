@@ -1,59 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- Compressed CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compressed CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+      integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Dumbbells & Donuts</title>
-   
-
-
-</head>
-<body>
-    <!-- <div class="top-bar">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text" id="username">User Name</li>
-            <li>
-              <a href="#">One</a>
-              <ul class="menu vertical">
-                <li><a href="#">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li><input type="search" placeholder="Search"></li>
-            <li><button type="button" class="button">Search</button></li>
-          </ul>
-        </div>
-    </div> -->
-
+  </head>
+  <body>
     
-    
-    
-
-    <div class="grid-x grid-padding-x"> <!-- Aligned to the left -->
+    <!-- <div class="grid-x grid-padding-x" id="navbar">
       <div class="cell small-4">
         <ul class="menu">
-          <li class="menu-text" id="username"><a href="#">User Name</a></li>
-        </ul>  
-      </div>
-      <div class="cell small-4"></div>
-      <div class="cell small-4">
-        <ul class="menu float-right">
-          <li class="menu-text float-right" id="workoutTab"><a href="#">Workout</a></li>
-          <li class="menu-text float-right" id="nutritionTab"><a href="#">Nutrition</a></li>
+          <li class="menu-text is-active" id="username"><a href="#">User Name</a></li>
         </ul>
       </div>
-    </div>
+      <div class="cell medium-auto" id="menu-right">
+        <ul class="menu float-right">
+          <li class="menu-text float-right " id="workoutTab">
+            <a href="#"><i class="fas fa-dumbbell"></i> &nbsp Workout</a>
+          </li>
+          <li class="menu-text float-right" id="nutritionTab">
+            <a href="#"><i class="fas fa-utensils"></i> &nbsp Nutrition</a>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+
+    <ul class="menu">
+      <li class="menu-text is-active" id="username"><a href="#">User Name</a></li>
+      <li class="menu" id="workoutTab"><a href="#"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
+      <li class="menu" id="nutritionTab"><a href="#"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
+    </ul>
+    
+
+    <!-- Workout Type -->
 
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
@@ -63,38 +64,34 @@
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
       <div class="card cell small-2">
-        <img src="./img/HIIT.jpg">
+        <img src="./img/strength.png" />
+        <div class="card-section">
+          <p>Strength</p>
+        </div>
+      </div>
+      <div class="card cell small-2">
+        <img src="./img/HIIT.jpg" />
         <div class="card-section">
           <p>HIIT</p>
         </div>
       </div>
       <div class="card cell small-2">
-        <img src="./img/yoga.jpg">
+        <img src="./img/yoga.jpg" />
         <div class="card-section">
           <p>Yoga</p>
         </div>
       </div>
       <div class="card cell small-2">
-        <img src="./img/zumba.jpg">
+        <img src="./img/zumba.jpg" />
         <div class="card-section">
           <p>Zumba</p>
         </div>
       </div>
-      <div class="card cell small-2">
-        <img src="./img/pilates.jpg">
-        <div class="card-section">
-          <p>Pilates</p>
-        </div>
-      </div>
-      <div class="card cell small-2">
-        <img src="./img/cardio.jpg">
-        <div class="card-section">
-          <p>Cardio</p>
-        </div>
-      </div>
       <div class="cell small-1"></div>
-    </div>
-    
+    </div>  
+
+    <!-- Length Options -->
+
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
       <h4>Choose length of workout</h4>
@@ -103,34 +100,21 @@
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
       <div class="card cell small-2">
-        <!-- <img src="./img/HIIT.jpg"> -->
         <div class="card-section">
-          <!-- <a href="#">7mins</a> -->
-          <p>3 mins</p>
-        </div>
-      </div>
-      <div class="card cell small-2">
-        <!-- <img src="./img/HIIT.jpg"> -->
-        <div class="card-section">
-          <!-- <a href="#">7mins</a> -->
           <p>7 mins</p>
-          <!-- <a class="button expanded" href="#">Such Expand</a> -->
         </div>
       </div>
       <div class="card cell small-2">
-        <!-- <img src="./img/yoga.jpg"> -->
         <div class="card-section">
           <p>15 mins</p>
         </div>
       </div>
       <div class="card cell small-2">
-        <!-- <img src="./img/yoga.jpg"> -->
         <div class="card-section">
           <p>30 mins</p>
         </div>
       </div>
       <div class="card cell small-2">
-        <!-- <img src="./img/yoga.jpg"> -->
         <div class="card-section">
           <p>60 mins</p>
         </div>
@@ -138,75 +122,70 @@
       <div class="cell small-1"></div>
     </div>
 
+    <!-- Text area & calories info & search video-->
+
     <div class="grid-x grid-padding-x">
-      <div class="cell small-4"></div>
-      <div class="card cell small-4">
-        <!-- <img src="./img/yoga.jpg"> -->
+      <div class="cell small-1"></div>
+      <div class="card cell small-9">
         <div class="card-section">
-          <p> text area Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae obcaecati ea consequatur eligendi dolores dolore quasi hic accusamus deleniti quia. Porro, reiciendis. <span>###calories###</span> Ducimus, placeat quod officia dolor optio id inventore.</p>
+          <p>
+            Great! You will burn this much of caloreis from this work out:
+            <span>###calories###</span>
+            <button class="hollow button small secondary" href="#">
+              Search Videos
+            </button>
+          </p>
         </div>
       </div>
     </div>
 
+    <!-- Videos -->
+
     <div class="grid-x grid-padding-x">
-      <div class="cell small-1"></div>
-      <div class="card cell small-2">
-          <iframe src="//www.youtube.com/embed/r7xsYgTeM2Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Video 1</iframe>
+      <div class="cell small-4"></div>
+      <div class="card cell small-4">
+        <iframe
+          src="//www.youtube.com/embed/r7xsYgTeM2Q"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          >Video 1</iframe
+        >
         <div class="card-section">
-          <button class="hollow button secondary" href="#">Add to your library</button>
-        </div>
-      </div>
-      <div class="card cell small-2">
-        <iframe>Video 2</iframe>
-        <div class="card-section">
-          <button class="hollow button secondary" href="#">Add to your library</button>
-        </div>
-      </div>
-      <div class="card cell small-2">
-        <iframe>Video 3</iframe>
-        <div class="card-section">
-          <button class="hollow button secondary" href="#">Add to your library</button>
-        </div>
-      </div>
-      <div class="card cell small-2">
-        <iframe>Video 4</iframe>
-        <div class="card-section">
-          <button class="hollow button secondary" href="#">Add to your library</button>
-        </div>
-      </div>
-      <div class="card cell small-2">
-        <iframe>Video 5</iframe>
-        <div class="card-section">
-          <button class="hollow button secondary" href="#">Add to your library</button>
+          <button class="hollow button small secondary" href="#">
+            Add to your library
+          </button>
         </div>
       </div>
       <div class="cell small-1"></div>
     </div>
 
+    <!-- Calender section -->
+
     <div class="grid-x grid-padding-x">
-      <div class="cell small-4"></div>
-      <div class="card cell small-4">
-        <h5>Don't have time today? <br> Schedule it into your future!</h5>
+      <div class="cell small-1"></div>
+      <div class="card cell small-9">
+        <h5>Don't have time today? Schedule it into your future!</h5>
         <div class="card-section">
           <form action="/action_page.php">
             <label for="futureWorkoutTime">Workout Day & Time:</label>
-            <input type="datetime-local" id="workouttime" name="workouttime">
-            <button class="hollow button secondary" href="#">Add to Calender</button>
+            <input type="datetime-local" id="workouttime" name="workouttime" />
+            <button class="hollow button small secondary" id="calender" href="#">
+              Add to Calender
+            </button>
           </form>
         </div>
       </div>
     </div>
 
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-1"></div>
-      
-    </div>
 
-  <!-- Compressed JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js" integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous">
-  </script>
+    <!-- Compressed JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+      integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="
+      crossorigin="anonymous"
+    ></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
 </html>
