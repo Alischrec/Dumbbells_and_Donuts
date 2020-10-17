@@ -141,9 +141,8 @@ a:hover {
 #show-workout {
     /* background-color: rgba(251, 242, 220, 0.46);
     color: #624B3C; */
-    background-color: rgba(58, 47, 21, 0.6);
+    background-color: rgba(58, 36, 9, 0.6);
     color: #ede7d4;
-    padding: 20px;
 }
 
 #show-workout:hover {
@@ -153,12 +152,12 @@ a:hover {
 }
 
 .bottom-button {
-    background-color: rgba(58, 47, 21, 0.6);
+    background-color: rgba(58, 36, 9, 0.6);
     color: #ede7d4;
 }
 
 .bottom-button:hover {
-    background-color: #2d2417;
+    background-color: #624B3C;
     color: #ede7d4;
 }
 
