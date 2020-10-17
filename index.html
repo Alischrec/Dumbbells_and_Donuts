@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumbbells & Donuts</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css"
+        integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
+    <link href=“https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap” rel=“stylesheet”>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body class='indexHtml'>
+
+    <div class="container" id='landing'>
+        <div class='card'>
+            <div class='row'>
+                <h3 id='title'> <br>Welcome to <br> Dumbbells & Donuts!</h3>
+                <h3 class='welcomeBack hide'>Welcome back to <br> Dumbbells & Donuts!
+                    <h5 class='welcomeBack hide'>Update your stats below!</h5>
+                    <div id='currentStats'></div>
+                </h3>
+            </div>
+            <div class="card-section small-12 small-centered">
+                <div id='newUser' class="columns small-12 small-centered large-centered">
+                    <div class="columns small-12 small-centered">
+                        <label>Name
+                            <input type="text" name="name" id='fullName' placeholder="Enter your name here">
+                        </label>
+                    </div>
+                    <div class="columns small-12 small-centered">
+                        <label>Email
+                            <input type="text" name="email" id='email' placeholder="Enter your email here">
+                        </label>
+                    </div>
+                    <div class="columns small-12 small-centered">
+                        <label class="columns small-12">Height</label>
+                        <div class="columns small-6">
+                            <select name="Height" id="heightFoot">
+                                <option value="" disabled selected hidden>Feet</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="columns small-6">
+                            <select name="Height" id="heightInch">
+                                <option value="" disabled selected hidden>Inches</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id=' validation_height'>
+                    </div>
+                    <div class="columns small-12 small-centered">
+                        <label>Weight
+                            <input id='weightinlbs' type="text" name="weight" placeholder="Enter your weight in lbs">
+                        </label>
+                        <div id='validation_weight'></div>
+                        <button type="button" class="primary button expanded search-button" id='submit'>
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div id='selectNextPage' class='hide'>
+                <p class='select'>What would you like to work on today?</p>
+                <div>
+                    <a class="button secondary " href="assets/workout.html" id='workoutBtn'>Workout!</a>
+                    <a class="button secondary" href="assets/nutrition.html" id='nutritionBtn'>Nutrition!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <!-- Foundation JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+        integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <script src='assets/js/script.js'></script>
+
+</body>
+
+</html>
