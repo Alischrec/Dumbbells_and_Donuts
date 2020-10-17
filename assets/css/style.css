@@ -141,7 +141,6 @@ a:hover {
     background-color: rgba(251, 242, 220, 0.46);
     color: #624B3C;
     padding: 20px;
-    margin-right: 30%
 }
 
 #show-workout:hover {
@@ -149,6 +148,12 @@ a:hover {
     color: #2d2417;
     
 }
+
+.bottom-button {
+    background-color: #624B3C;
+    color: #ede7d4;
+}
+
 
 .sidebar {
     height: 100%;

@@ -110,12 +110,13 @@
     <!-- search workout button & text area-->
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
-      <div class="cell small-4 border-none">
+      <div class="cell small-2 border-none">
         <div class="card-section">
           <button class="button" id="show-workout">Click here to view your Workout</button>
         </div>
       </div>
-      <div class="card cell small-4 border-none hide" id="calories-info">
+      <!-- hide & unhide -->
+      <div class="card cell small-2 border-none" id="calories-info">
         <div class="card-section">
           <!-- calories input -->
           <p></p>
@@ -123,26 +124,29 @@
       </div>
       <div class="cell small-1"></div>
     </div>
+    <br>
 
 
     <!-- Display Videos -->
 
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
-      <div class="card cell small-4 hide" id="display-video">
-      </div>
-          <div class="card-section">
-            <button class="hollow button small secondary" href="#" id="add-to-library">
-              Add to your library
-            </button>
-            </div>
-      <div class="card cell small-4 hide" id="schedule-workout">
+      <!-- hide & unhide -->
+      <div class="card cell small-4" id="display-video"> 
+        <div class="card-section">
+          <button class="button medium bottom-button" href="#" id="add-to-library">
+            Add to your library
+          </button>
+          </div>
+      </div> 
+      <!-- hide & unhide -->
+      <div class="card cell small-4" id="schedule-workout">
           <h5>Can't finish you workout now? <br> Not Worries! Schedule it for later!</h5>
           <div class="card-section">
             <form action="/action_page.php">
               <label for="futureWorkoutTime">Workout Day & Time:</label>
               <input type="datetime-local" id="workouttime" name="workouttime" />
-              <button class="hollow button small secondary" id="calender" href="#">
+              <button class="button medium buttom-button" id="calender" href="#">
                 Add to Calender
               </button>
             </form>
