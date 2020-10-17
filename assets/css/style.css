@@ -148,8 +148,7 @@ a:hover {
 
 #show-workout:hover {
     background-color: #624B3C;
-    color: #ede7d4;
-    
+    color: #ede7d4;   
 }
 
 .bottom-button {
@@ -170,14 +169,14 @@ a:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #ccc;
+    background-color: rgba(251, 242, 220, 0.46);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
   }
 
 
-  .sidebar a {
+  /* .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -188,7 +187,7 @@ a:hover {
 
   .sidebar a:hover {
     color: #f1f1f1;
-  }
+  } */
 
   .sidebar .closebtn {
     position: absolute;
@@ -289,6 +288,7 @@ a:hover {
 }
 
 /* WORKOUT.HTML ENDS */
+
 
 html {
   /* Positioning */
