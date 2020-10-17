@@ -6,68 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dumbbells & Donuts</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css"
-    integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
+        integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
     <link href=“https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap” rel=“stylesheet”>
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
     <div class='container'>
-        <h3 id='title'> Let's talk Nutrition!</h3>
-        <p> Enter in what you ate today, and we will calculate the nutritional value for you!</p>
-        <form id="food-form">
-            <div class='row' id='input'>
-                <label id='label'>
-                    What did you eat today?
-                </label>
-                <input type="text" id='food-input'>
-                <button id='find-food' type="button" class="primary button expanded search-button" >
-                    Get Info!
-                </button>
-            </div>
+        <div class="card-section small-12 small-centered">
+            <h3 id='title'> Let's talk Nutrition!</h3>
+            <p> Enter in what you ate today, and we will calculate the nutritional value for you!</p>
+            <form id="food-form">
+                <div class='row' id='input'>
+                    <div class="input-group">
+                        <label id='label'>
+                            What did you eat today?
+                        </label>
+                        <input class="input-group-field" type="text" id='food-input'>
+                        <div class="input-group-button">
+                          <input id='find-food' type="button" class="primary button expanded search-button" value="Get Info">
+                        </div>
+                      </div>
+                </div>
 
-            <div class='row'>
-                <table style="width:100%" id="food-view">
-                    <tr>
-                        <td>Food</td>
-                        <td>Calories </td>
-                        <td>Proteins</td>
-                        <td>Fats</td>
-                        <td>Carbs</td>
-                        <td>Sugar</td>
-                        <td>Fiber</td>
-                    </tr>
-                </table>
+                <div class='row'>
+                    <table class="columns small-12 small-centered" style="width:100%" id="food-view">
+                        <tr>
+                            <td>Food</td>
+                            <td>Calories </td>
+                            <td>Proteins</td>
+                            <td>Fats</td>
+                            <td>Carbs</td>
+                            <td>Sugar</td>
+                            <td>Fiber</td>
+                        </tr>
+                    </table>
 
-                <table style="width:100%" id="totals">
-                    <tr>
-                        <td>Food</td>
-                        <td>Calories </td>
-                        <td>Proteins</td>
-                        <td>Fats</td>
-                        <td>Carbs</td>
-                        <td>Sugar</td>
-                        <td>Fiber</td>
-                    </tr>
-                    <tr>
-                        <td> Total </td>
-                        <td id="total-cal"> </td>
-                        <td id="total-pr"> </td>
-                        <td id="total-fat"></td>
-                        <td id="total-carb"></td>
-                        <td id="total-sugar"></td>
-                        <td id="total-fiber"></td>
-                    </tr>
+                    <table class="columns small-12 small-centered" style="width:100%" id="totals">
+                        <tr>
+                            <td>Food</td>
+                            <td>Calories </td>
+                            <td>Proteins</td>
+                            <td>Fats</td>
+                            <td>Carbs</td>
+                            <td>Sugar</td>
+                            <td>Fiber</td>
+                        </tr>
+                        <tr>
+                            <td> Total </td>
+                            <td id="total-cal"> </td>
+                            <td id="total-pr"> </td>
+                            <td id="total-fat"></td>
+                            <td id="total-carb"></td>
+                            <td id="total-sugar"></td>
+                            <td id="total-fiber"></td>
+                        </tr>
+                    </table>
+                    <span>
+                        <button id='total-save' type="button" class="primary button expanded search-button">
+                            Save Totals
+                        </button>
+                    </span>
+                    <span>
+                        <button id='draw' type="button" class="primary button expanded search-button">
+                            See Graph
+                        </button>
+                    </span>
+                    <div id='curve_chart'></div>
+                </div>
+            </form>
 
-                </table>
-
-            </div>
-        </form>
-
-        <div id="edamam-badge" data-color="white"></div>
+            <div id="edamam-badge" data-color="white"></div>
+        </div>
     </div>
 
     <!-- jQuery -->
