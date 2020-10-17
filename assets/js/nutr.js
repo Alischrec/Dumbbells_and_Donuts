@@ -90,14 +90,14 @@ $("#find-food").on("click", function(event) {
 
   event.preventDefault();
   let food = $("#food-input").val();
-  console.log(food);
+  //console.log(food);
   let query = "https://api.edamam.com/api/food-database/v2/parser?ingr="+food+"&app_id="+app_id+"&app_key="+APIKey;
   $.ajax({
     url: query,
     method: "GET"
   }).done(function(response) {
       
-    console.log(response);
+    //console.log(response);
     //let nutr = response.parsed[0].food.nutrients
     let parsed = response.parsed;
     let ingr = [];
@@ -109,8 +109,8 @@ $("#find-food").on("click", function(event) {
       $("#no-food").empty();
     }
     parsed.forEach(function(el) {
-      console.log(el.food.foodId);
-      console.log(el.food.nutrients.ENERC_KCAL);
+      //console.log(el.food.foodId);
+      //console.log(el.food.nutrients.ENERC_KCAL);
       //console.log(el.measure.uri); 
       //console.log(el.quantity);
       /**
@@ -140,8 +140,8 @@ $("#find-food").on("click", function(event) {
     
     ingr.forEach(function(el){
     data_post = {'ingredients':[el]};
-    console.log("======data-post====");
-    console.log(data_post);
+    //console.log("======data-post====");
+    //console.log(data_post);
 /// work with just one ingridient , have to have loop
     $.ajax({
       beforeSend: function(xhrObj){
@@ -153,10 +153,10 @@ $("#find-food").on("click", function(event) {
       dataType: "json"
     }).done(function(response){
       
-      console.log(response);
+      //console.log(response);
       let nutr = response.totalNutrients;
       let cal = nutr.ENERC_KCAL;
-      console.log(cal);
+      //console.log(cal);
       let calorie =cal.quantity;
       
       let proteins = 0 ;
@@ -233,8 +233,8 @@ $("#total-save").on("click", function(event) {
   let totSaveCarb = $("#total-carb").text();
   let totSaveSug = $("#total-sugar").text();
   let totSaveFib = $("#total-fiber").text();
-  console.log("=====Date====");
-  console.log(dateSave);
+  //console.log("=====Date====");
+  //console.log(dateSave);
    /* I need logic how I save history
   I save date and cal(all nutr)
   if lastTotal is today , than I rewrite last elem in arr, else I add new
