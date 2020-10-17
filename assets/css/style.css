@@ -8,10 +8,13 @@ html {
 
 body {
   font-family: ‘Commissioner’, sans-serif;
-
+  /* background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; */
 }
 
-h3 h5 {
+h3, h5 {
   font-family: 'Bad Script', cursive;
   text-align: center;
 }
@@ -25,6 +28,14 @@ p {
   box-sizing: inherit;
   margin-right: auto;
   margin-left: auto; 
+  height: 100vh;
+  display: flex;
+}
+
+.card{
+  margin: auto;
+  background-color: rgba(105, 162, 216, 0.2);
+
 }
 
 #landing{
@@ -49,15 +60,19 @@ p {
   text-align: center;
 }
 
+#selectNextPage{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #workoutBtn {
-  width: 200px;
+  width: 150px;
   height: 40px;
-  margin-right: 30px;
-  margin-left: 15px;
 }
 
 #nutritionBtn {
-  width: 200px;
+  width: 150px;
   height: 40px;
 }
 
@@ -82,11 +97,15 @@ p {
 
 #find-food{
   cursor: pointer;
-  
+}
+
+.row-button{
+  margin-right: 1rem !important;
 }
 
 #total-save{
   width: 15%;
+  min-width: 100px;
   height: 50px;
   padding-left: 5%;
   padding-right: 5%;
@@ -95,6 +114,7 @@ p {
 
 #draw{
   width: 15%;
+  min-width: 100px;
   height: 50px;
   padding-left: 5%;
   padding-right: 5%;
