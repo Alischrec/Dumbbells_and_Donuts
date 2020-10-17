@@ -1,4 +1,239 @@
 
+
+/* WORKOUT.HTML START */
+
+.card {
+    margin: auto;
+    border-radius: 5px;
+    background-color: rgba(251, 242, 220, 0.46);
+}
+
+.button {
+    border-radius: 5px;
+    background-color: #624B3C;
+}
+
+img {
+    margin-top: 10px;
+}
+
+body {
+    font-family: 'Commissioner', sans-serif;
+    color: #624B3C;
+    background-color: #ede7d4;
+    background-image: url(https://image.freepik.com/free-photo/abstract-blur-fitness-gym-with-equipment-background_34168-454.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+} 
+    
+.menu {
+    padding-top: 10px;
+    background-color: rgba(241, 224, 181, 0.46);
+}
+
+#username {
+    margin-right: 57%;
+    padding: 0px;
+    margin-left: 20px;
+    margin-bottom: 5px; 
+    font-size: 400px;
+}
+
+h4 {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'Bad Script', cursive;
+    color: #624B3C; 
+    font-weight: bold;
+
+}
+
+h5 {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: 'Bad Script', cursive;
+    color: #624B3C;
+    font-weight: bold;
+}
+
+.workout-selected {
+    background-color: #624B3C;
+    color: white;
+}
+
+.align-center {
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    color: #624B3C;
+    font-family: 'Bad Script', cursive;
+    font-size: large;
+}
+
+a:hover {
+    background-color: #ede7d4;
+    color: #2d2417;
+}
+
+.border-none {
+    border:none;
+}
+
+#show-workout {
+    /* background-color: rgba(251, 242, 220, 0.46);
+    color: #624B3C; */
+    background-color: rgba(58, 36, 9, 0.6);
+    color: #ede7d4;
+}
+
+#show-workout:hover {
+    background-color: #624B3C;
+    color: #ede7d4;
+    
+}
+
+.bottom-button {
+    background-color: rgba(58, 36, 9, 0.6);
+    color: #ede7d4;
+}
+
+.bottom-button:hover {
+    background-color: #624B3C;
+    color: #ede7d4;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ccc;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  main {
+    transition: margin-left .5s;
+    /* padding: 16px; */
+  }
+
+  .workout-library-display {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .calories-display{
+      padding: 20px;
+      font-family: 'Commissioner', sans-serif;
+      color: #624B3C;
+      font-weight: bold;
+  }
+  
+.workout-length {
+    color: #2d2417;
+    font-weight: bolder;
+}
+
+.workout-type {
+    color: #2d2417;
+    font-weight: bolder;
+}
+
+/* media query for the user name in the menu */
+@media screen and (max-width: 1750px) {
+    
+    #username {
+         margin-right: 52%;    
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    
+    #username {
+         margin-right: 45%;    
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    
+    #username {
+         margin-right: 40%;    
+    }
+}
+
+
+@media screen and (max-width: 1300px) {
+    
+    #username {
+         margin-right: 25%;    
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    
+    #username {
+         margin-right: 15%;    
+    }
+}
+
+@media screen and (max-width: 930px) {
+    
+    #username {
+         margin-right: 2%;    
+    }
+}
+
+@media screen and (max-width: 830px) {
+    
+    #username {
+         margin-right: 4%;    
+    }
+}
+
+/* WORKOUT.HTML ENDS */
+
+
 html {
   /* Positioning */
   position: relative;
@@ -7,20 +242,17 @@ html {
 
 /* INDEX.HTML START */
 
-body {
-  font-family: ‘Commissioner’, sans-serif;
-  background-image: url(https://media.istockphoto.com/photos/gym-background-with-fitness-equipment-dumbbells-weight-for-workout-picture-id1213615974?k=6&m=1213615974&s=170667a&w=0&h=ttn6MVduG_9cMkZsV7hRqWGPU5xqU4pGoRqWIkY19Ik=);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
 .nutritionHtml {
   font-family: ‘Commissioner’, sans-serif;
   background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 150vh;
+  font-family: ‘Commissioner’, sans-serif;
+  background-image: url(https://media.istockphoto.com/photos/gym-background-with-fitness-equipment-dumbbells-weight-for-workout-picture-id1213615974?k=6&m=1213615974&s=170667a&w=0&h=ttn6MVduG_9cMkZsV7hRqWGPU5xqU4pGoRqWIkY19Ik=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 h2, h3, h5 {
