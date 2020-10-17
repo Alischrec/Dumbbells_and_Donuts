@@ -1,73 +1,214 @@
 /* INDEX.HTML START */
-
 #index{
-    background-color: #F4F2F0;
- 
+  background-color: #F4F2F0;
 }
-
 #title{
-    text-align: center;
+  text-align: center;
 }
-
 .welcomeBack{
-    /* display: none; */
-    text-align: center;
+  /* display: none; */
+  text-align: center;
 }
-
 .translucent-form-overlay {
-    max-width: 500px;
-    width: 100%;
-    background-color: rgba(54, 54, 54, 0.8);
-    padding: 20px;
-    color: black;
-  }
-  
-  .translucent-form-overlay .columns.row {
-    display: block;
-  }
-  
-  .translucent-form-overlay h3, .translucent-form-overlay label {
-    color: black;
-  }
-  
-  .translucent-form-overlay input, .translucent-form-overlay select {
-    color: #8a8a8a;
-  }
-  
-  .translucent-form-overlay input::-webkit-input-placeholder {
-    color: #8a8a8a;
-  }
-  
-  .translucent-form-overlay input:-ms-input-placeholder {
-    color: #8a8a8a;
-  }
-  
-  .translucent-form-overlay input::placeholder {
-    color: #8a8a8a;
-  }
-
-  #workoutBtn{
-    width: 200px;
-    height: 40px;
-  }
-  
-  #nutritionBtn{
-    width: 200px;
-    height: 40px;
-  }
-
-  .hide {
-    display:none;
-  }
-
-  .show {
-    display: block;
-  }
-
-
-  
-
-  /* INDEX.HTML STOP */
-.card {
-    margin: 10px;
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.8);
+  padding: 20px;
+  color: black;
 }
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: black;
+}
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+.translucent-form-overlay input::placeholder {
+  color: #8a8a8a;
+}
+#workoutBtn{
+  width: 200px;
+  height: 40px;
+}
+#nutritionBtn{
+  width: 200px;
+  height: 40px;
+}
+.hide {
+  display:none;
+}
+.show {
+  display: block;
+}
+/* INDEX.HTML STOP */
+/* WORKOUT.HTML START */
+.card {
+  margin: auto;
+  border-radius: 5px;
+  background-color: rgba(251, 242, 220, 0.46);
+}
+.button {
+  border-radius: 5px;
+  background-color: #624B3C;
+}
+img {
+  margin-top: 10px;
+}
+body {
+  font-family: 'Commissioner', sans-serif;
+  color: #624B3C;
+  background-color: #ede7d4;
+  background-image: url(https://image.freepik.com/free-photo/abstract-blur-fitness-gym-with-equipment-background_34168-454.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+} 
+.menu {
+  padding-top: 10px;
+  background-color: rgba(241, 224, 181, 0.46);
+}
+#username {
+  margin-right: 57%;
+  padding: 0px;
+  margin-left: 20px;
+  margin-bottom: 5px; 
+}
+h4 {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: 'Bad Script', cursive;
+  color: #624B3C; 
+  font-weight: bold;
+}
+h5 {
+  margin-top: 20px;
+  margin-left: 15px;
+  font-family: 'Bad Script', cursive;
+  color: #624B3C;
+  font-weight: bold;
+}
+.workout-selected {
+  background-color: #624B3C;
+  color: white;
+}
+.align-center {
+  text-align: center;
+  align-items: center;
+}
+a {
+  color: #624B3C;
+  font-family: 'Bad Script', cursive;
+  font-size: large;
+}
+a:hover {
+  background-color: #ede7d4;
+  color: #2d2417;
+}
+.border-none {
+  border:none;
+}
+#show-workout {
+  background-color: rgba(251, 242, 220, 0.46);
+  color: #624B3C;
+  padding: 20px;
+}
+#show-workout:hover {
+  background-color: #ede7d4;
+  color: #2d2417;
+}
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #f6e6d6;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color:  #ede7d4;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+main {
+  transition: margin-left .5s;
+  /* padding: 16px; */
+}
+.workout-library-display {
+  padding: 10px 10px 10px 10px;
+}
+.calories-display{
+    padding: 20px;
+    font-family: 'Commissioner', sans-serif;
+    color: #624B3C;
+    font-weight: bold;
+}
+/* media query for the user name in the menu */
+@media screen and (max-width: 1750px) {
+  #username {
+       margin-right: 52%;    
+  }
+}
+@media screen and (max-width: 1550px) {
+  #username {
+       margin-right: 45%;    
+  }
+}
+@media screen and (max-width: 1400px) {
+  #username {
+       margin-right: 40%;    
+  }
+}
+@media screen and (max-width: 1300px) {
+  #username {
+       margin-right: 25%;    
+  }
+}
+@media screen and (max-width: 1060px) {
+  #username {
+       margin-right: 15%;    
+  }
+}
+@media screen and (max-width: 930px) {
+  #username {
+       margin-right: 2%;    
+  }
+}
+@media screen and (max-width: 830px) {
+  #username {
+       margin-right: 4%;    
+  }
+}
+/* WORKOUT.HTML ENDS */
