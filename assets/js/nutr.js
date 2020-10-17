@@ -103,7 +103,7 @@ $("#find-food").on("click", function(event) {
     let ingr = [];
     if (parsed.length==0){
       $("#no-food").text("Sorry, I didn't find such food");
-      $("#no-food").attr("style","color:red");
+      $("#no-food").attr("style","color:brown");
     }
     else{
       $("#no-food").empty();
