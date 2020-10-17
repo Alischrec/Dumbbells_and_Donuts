@@ -103,7 +103,7 @@ $(".workout-length").on("click", function (event) {
   console.log(calburnt);
 });
 $("#show-workout").on("click", function (event) {
-  let apikey = "AIzaSyAtCIQm7CsHtSXhOpYspW3Opq-1dKI7PmA";
+  let apikey = "AIzaSyAgUshtKqb_q6zx4neWBEy9O1ja2d9cIu0";
   event.preventDefault();
   if (workoutType === "" || workoutLength === "") {
     $("#calories-info").html(
