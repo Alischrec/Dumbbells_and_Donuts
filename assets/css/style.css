@@ -1,61 +1,4 @@
 
-/* INDEX.HTML START */
-
-#index{
-    background-color: #F4F2F0;
-}
-
-#title{
-    text-align: center;
-}
-.welcomeBack{
-    /* display: none; */
-    text-align: center;
-}
-.translucent-form-overlay {
-    max-width: 500px;
-    width: 100%;
-    background-color: rgba(54, 54, 54, 0.8);
-    padding: 20px;
-    color: black;
-  }
-  .translucent-form-overlay .columns.row {
-    display: block;
-  }
-  .translucent-form-overlay h3, .translucent-form-overlay label {
-    color: black;
-  }
-  .translucent-form-overlay input, .translucent-form-overlay select {
-    color: #8a8a8a;
-  }
-  .translucent-form-overlay input::-webkit-input-placeholder {
-    color: #8a8a8a;
-  }
-  .translucent-form-overlay input:-ms-input-placeholder {
-    color: #8a8a8a;
-  }
-  .translucent-form-overlay input::placeholder {
-    color: #8a8a8a;
-  }
-
-  #workoutBtn{
-    width: 200px;
-    height: 40px;
-  }
-  #nutritionBtn{
-    width: 200px;
-    height: 40px;
-  }
-  .hide {
-    display:none;
-  }
-  .show {
-    display: block;
-  }
-
-/* INDEX.HTML STOP */
-  
-  
 
 /* WORKOUT.HTML START */
 
@@ -298,20 +241,17 @@ html {
 
 /* INDEX.HTML START */
 
-body {
-  font-family: ‘Commissioner’, sans-serif;
-  background-image: url(https://media.istockphoto.com/photos/gym-background-with-fitness-equipment-dumbbells-weight-for-workout-picture-id1213615974?k=6&m=1213615974&s=170667a&w=0&h=ttn6MVduG_9cMkZsV7hRqWGPU5xqU4pGoRqWIkY19Ik=);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
 .nutritionHtml {
   font-family: ‘Commissioner’, sans-serif;
   background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 150vh;
+  font-family: ‘Commissioner’, sans-serif;
+  background-image: url(https://media.istockphoto.com/photos/gym-background-with-fitness-equipment-dumbbells-weight-for-workout-picture-id1213615974?k=6&m=1213615974&s=170667a&w=0&h=ttn6MVduG_9cMkZsV7hRqWGPU5xqU4pGoRqWIkY19Ik=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 h2, h3, h5 {
