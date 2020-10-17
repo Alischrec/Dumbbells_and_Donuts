@@ -13,11 +13,12 @@
 
 </head>
 
-<body>
+<body class='nutritionHtml'>
 
     <div class='container'>
         <div class="card-section small-12 small-centered">
-            <h3 id='title'> Let's talk Nutrition!</h3>
+            <br>
+            <h2 id='title'> Let's talk Nutrition!</h2>
             <p> Enter in what you ate today, and we will calculate the nutritional value for you!</p>
             <form id="food-form">
                 <div class='row' id='input'>
@@ -34,7 +35,7 @@
                 </div>
 
                 <div class='row'>
-                    <table class="columns small-12 small-centered" style="width:100%" id="food-view">
+                    <table class="columns small-12 small-centered stack" style="width:100%" id="food-view">
                         <tr>
                             <td>Food</td>
                             <td>Calories </td>
@@ -46,7 +47,7 @@
                         </tr>
                     </table>
 
-                    <table class="columns small-12 small-centered" style="width:100%" id="totals">
+                    <table class="columns small-12 small-centered stack" style="width:100%" id="totals">
                         <tr>
                             <td>Food</td>
                             <td>Calories </td>
@@ -56,8 +57,8 @@
                             <td>Sugar</td>
                             <td>Fiber</td>
                         </tr>
-                        <tr>
-                            <td> Total </td>
+                        <tr >
+                            <td> <b>Total</b> </td>
                             <td id="total-cal"> </td>
                             <td id="total-pr"> </td>
                             <td id="total-fat"></td>
@@ -66,7 +67,7 @@
                             <td id="total-fiber"></td>
                         </tr>
                     </table>
-                    <div class='btns' style='display:flex'>
+                    <div  style='display:flex'>
                         <button id='total-save' type="button" class="primary button expanded row-button">
                             Save Totals
                         </button>
