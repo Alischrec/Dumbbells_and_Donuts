@@ -93,6 +93,7 @@ body {
     padding: 0px;
     margin-left: 20px;
     margin-bottom: 5px; 
+    font-size: 400px;
 }
 
 h4 {
@@ -138,19 +139,26 @@ a:hover {
 }
 
 #show-workout {
-    background-color: rgba(251, 242, 220, 0.46);
-    color: #624B3C;
+    /* background-color: rgba(251, 242, 220, 0.46);
+    color: #624B3C; */
+    background-color: rgba(58, 47, 21, 0.6);
+    color: #ede7d4;
     padding: 20px;
 }
 
 #show-workout:hover {
-    background-color: #ede7d4;
-    color: #2d2417;
+    background-color: #624B3C;
+    color: #ede7d4;
     
 }
 
 .bottom-button {
-    background-color: #624B3C;
+    background-color: rgba(58, 47, 21, 0.6);
+    color: #ede7d4;
+}
+
+.bottom-button:hover {
+    background-color: #2d2417;
     color: #ede7d4;
 }
 
@@ -219,6 +227,15 @@ a:hover {
       font-weight: bold;
   }
   
+.workout-length {
+    color: #2d2417;
+    font-weight: bolder;
+}
+
+.workout-type {
+    color: #2d2417;
+    font-weight: bolder;
+}
 
 /* media query for the user name in the menu */
 @media screen and (max-width: 1750px) {
