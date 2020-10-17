@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-.nutritionHtml{
+.nutritionHtml {
   font-family: ‘Commissioner’, sans-serif;
   background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
   background-size: cover;
@@ -22,7 +22,7 @@ body {
   min-height: 150vh;
 }
 
-h3, h5 {
+h2, h3, h5 {
   font-family: 'Bad Script', cursive;
   text-align: center;
   color: #624B3C;
@@ -32,25 +32,23 @@ p {
   font-family: ‘Commissioner’, sans-serif;
   text-align: center;
   color: #624B3C;
-
 }
 
 .container {
   box-sizing: inherit;
   margin-right: auto;
-  margin-left: auto; 
+  margin-left: auto;
   height: 100vh;
   display: flex;
 }
 
-.card{
+.card {
   margin: auto;
   background-color: rgba(251, 242, 220, 0.46);
   border-radius: 5px;
-
 }
 
-#landing{
+#landing {
   width: fit-content;
 }
 
@@ -68,14 +66,13 @@ p {
   margin-left: auto;
   background-color: #624B3C;
   border-radius: 5px;
-
 }
 
 .select button:hover {
   text-align: center;
 }
 
-#selectNextPage{
+#selectNextPage {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,10 +81,8 @@ p {
 #workoutBtn {
   width: 150px;
   height: 40px;
-    background-color: #624B3C;
-    border-radius: 5px;
-
-
+  background-color: #624B3C;
+  border-radius: 5px;
 }
 
 #nutritionBtn {
@@ -104,10 +99,11 @@ p {
 .show {
   display: block;
 }
+
 /* INDEX.HTML STOP */
 
-
 /* NUTRITION.HTML START */
+
 #nutrition {
   background-color: #F4F2F0;
 }
@@ -116,17 +112,17 @@ p {
   font-size: medium;
 }
 
-#find-food{
+#find-food {
   cursor: pointer;
   background-color: #624B3C;
   border-radius: 5px;
 }
 
-.row-button{
+.row-button {
   margin-right: 1rem !important;
 }
 
-#total-save{
+#total-save {
   width: 15%;
   min-width: 100px;
   height: 50px;
@@ -137,7 +133,7 @@ p {
   border-radius: 5px;
 }
 
-#draw{
+#draw {
   width: 15%;
   min-width: 100px;
   height: 50px;
@@ -148,12 +144,15 @@ p {
   border-radius: 5px;
 }
 
-#food-view{
+#food-view {
   border-radius: 5px;
 }
 
 table {
-border-collapse: unset;
+  border-collapse: unset;
 }
+td {
+  background-color: hsl(34, 44%, 69%);
+  border-radius: 5px;}
 
 /* NUTRITION.HTML STOP */
