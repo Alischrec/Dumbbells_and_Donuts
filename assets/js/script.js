@@ -81,7 +81,7 @@ $("#submit").on("click", function (event) {
       bmi: varbmi,
     };
     localStorage.setItem("userProfile", JSON.stringify(userProfile));
-    $("#selectnextPage").attr("class", "show");
+    $("#selectNextPage").attr("class", "show");
   }
 });
 $(".workout-type").on("click", function (event) {
