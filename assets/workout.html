@@ -29,30 +29,17 @@
   </head>
   <body>
     
-    <!-- <div class="grid-x grid-padding-x" id="navbar">
-      <div class="cell small-4">
-        <ul class="menu">
-          <li class="menu-text is-active" id="username"><a href="#">User Name</a></li>
-        </ul>
-      </div>
-      <div class="cell medium-auto" id="menu-right">
-        <ul class="menu float-right">
-          <li class="menu-text float-right " id="workoutTab">
-            <a href="#"><i class="fas fa-dumbbell"></i> &nbsp Workout</a>
-          </li>
-          <li class="menu-text float-right" id="nutritionTab">
-            <a href="#"><i class="fas fa-utensils"></i> &nbsp Nutrition</a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
 
-    <ul class="menu">
-      <li class="menu-text is-active" id="username"><a href="#">User Name</a></li>
-      <li class="menu" id="workoutTab"><a href="#"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
-      <li class="menu" id="nutritionTab"><a href="#"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
+    <ul class="vertical medium-horizontal small-horizontal menu" data-responsive-menu="drilldown small-dropdown">
+      <li class="menu-text" id="username"><a href="#">Dumbbells and Dounuts</a></li>
+      <li id="workoutTab"><a href="#"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
+      <li id="nutritionTab"><a href="#"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
+      <li id="libraryTab"><a href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
+      <li id="statsTab"><a href="#"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
     </ul>
-    
+    <br>
+  
+
 
     <!-- Workout Type -->
 
@@ -65,25 +52,25 @@
       <div class="cell small-1"></div>
       <div class="card cell small-2">
         <img src="./img/strength.png" />
-        <div class="card-section">
+        <div class="card-section small-12 small-centered ">
           <p>Strength</p>
         </div>
       </div>
       <div class="card cell small-2">
         <img src="./img/HIIT.jpg" />
-        <div class="card-section">
+        <div class="card-section small-12 small-centered">
           <p>HIIT</p>
         </div>
       </div>
       <div class="card cell small-2">
         <img src="./img/yoga.jpg" />
-        <div class="card-section">
+        <div class="card-section small-12 small-centered">
           <p>Yoga</p>
         </div>
       </div>
       <div class="card cell small-2">
         <img src="./img/zumba.jpg" />
-        <div class="card-section">
+        <div class="card-section small-12 small-centered">
           <p>Zumba</p>
         </div>
       </div>
@@ -100,33 +87,33 @@
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
       <div class="card cell small-2">
-        <div class="card-section">
+        <div class="card-section small-12 small-centered">
           <p>7 mins</p>
         </div>
       </div>
       <div class="card cell small-2">
-        <div class="card-section">
+        <div class="card-section small-12 small-centered">
           <p>15 mins</p>
         </div>
       </div>
       <div class="card cell small-2">
-        <div class="card-section">
+        <div class="card-section small-12 small-centered">
           <p>30 mins</p>
         </div>
       </div>
       <div class="card cell small-2">
-        <div class="card-section">
+        <div class="card-section small-12 small-centered">
           <p>60 mins</p>
         </div>
       </div>
       <div class="cell small-1"></div>
     </div>
-
+     <br>
     <!-- Text area & calories info & search video-->
-
+<!-- 
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
-      <div class="card cell small-9">
+      <div class="card cell small-9 caloreis">
         <div class="card-section">
           <p>
             Great! You will burn this much of caloreis from this work out:
@@ -137,11 +124,26 @@
           </p>
         </div>
       </div>
-    </div>
+    </div> -->
+   
 
+<div class="grid-x grid-padding-x">
+  <div class="cell small-1"></div>
+  <div class="card cell small-4 border-none">
+    <div class="card-section">
+      <button class="hollow button secondary" id="show-workout">Click here to view your Workout</button>
+    </div>
+  </div>
+  <div class="card cell small-4 border-none">
+    <div class="card-section" id="calories-info">
+      <p></p>
+    </div>
+  </div>
+  <div class="cell small-1"></div>
+</div>
     <!-- Videos -->
 
-    <div class="grid-x grid-padding-x">
+    <div class="grid-x grid-padding-x hide">
       <div class="cell small-4"></div>
       <div class="card cell small-4">
         <iframe
@@ -155,14 +157,14 @@
           <button class="hollow button small secondary" href="#">
             Add to your library
           </button>
-        </div>
+        <!-- </div> -->
       </div>
       <div class="cell small-1"></div>
     </div>
 
     <!-- Calender section -->
 
-    <div class="grid-x grid-padding-x">
+    <div class="grid-x grid-padding-x hide">
       <div class="cell small-1"></div>
       <div class="card cell small-9">
         <h5>Don't have time today? Schedule it into your future!</h5>
