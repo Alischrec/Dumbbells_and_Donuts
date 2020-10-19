@@ -2,6 +2,14 @@
 
 /* WORKOUT.HTML START */
 
+html {
+    /* Positioning */
+    position: relative;
+    align-content: center;
+  }
+  
+  
+
 .card {
     margin: 2%;
     border-radius: 5px;
@@ -11,7 +19,7 @@
 .button {
     border-radius: 5px;
     background-color: #624B3C;
-}
+}  
 
 img {
     margin-top: 10px;
@@ -32,7 +40,7 @@ img {
     background-color: rgba(241, 224, 181, 0.46);
 }
 
-#username {
+#logo {
     margin-right: 57%;
     padding: 0px;
     margin-left: 40px;
@@ -227,14 +235,14 @@ p {
 /* media query for the user name in the menu */
 @media screen and (max-width: 1750px) {
     
-    #username {
+    #logo {
          margin-right: 45%;    
     }
 }
 
 @media screen and (max-width: 1550px) {
     
-    #username {
+    #logo {
          margin-right: 25%;    
     }
 }
@@ -242,38 +250,31 @@ p {
 
 @media screen and (max-width: 1300px) {
     
-    #username {
+    #logo {
          margin-right: 20%;    
     }
 }
 
 @media screen and (max-width: 1060px) {
     
-    #username {
+    #logo {
          margin-right: 10%;    
     }
 }
 
 @media screen and (max-width: 930px) {
     
-    #username {
+    #logo {
          margin-right: 2%;    
     }
 }
 
 @media screen and (max-width: 830px) {
     
-    #username {
+    #logo {
          margin-right: 4%;    
     }
 }
 
 /* WORKOUT.HTML ENDS */
-
-
-html {
-  /* Positioning */
-  position: relative;
-  align-content: center;
-}
 
