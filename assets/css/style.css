@@ -3,7 +3,7 @@
 /* WORKOUT.HTML START */
 
 .card {
-    margin: auto;
+    margin: 2%;
     border-radius: 5px;
     background-color: rgba(251, 242, 220, 0.46);
 }
@@ -17,7 +17,7 @@ img {
     margin-top: 10px;
 }
 
-body {
+#main {
     font-family: 'Commissioner', sans-serif;
     color: #624B3C;
     background-color: #ede7d4;
@@ -35,9 +35,9 @@ body {
 #username {
     margin-right: 57%;
     padding: 0px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-bottom: 5px; 
-    font-size: 400px;
+    font-size: px;
 }
 
 h4 {
@@ -55,11 +55,12 @@ h5 {
     font-family: 'Bad Script', cursive;
     color: #624B3C;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .workout-selected {
-    background-color: #624B3C;
-    color: white;
+    background-color: #624B3C !important;
+    color: rgba(251, 242, 220) !important;
 }
 
 .align-center {
@@ -67,19 +68,29 @@ h5 {
     align-items: center;
 }
 
-a {
+.top-icon {
     color: #624B3C;
     font-family: 'Bad Script', cursive;
     font-size: large;
+    
 }
 
-a:hover {
+.top-icon:hover {
     background-color: #ede7d4;
     color: #2d2417;
 }
 
+.top-icon:focus {
+    background-color: #624B3C;
+    color: rgba(251, 242, 220);
+    outline: 0;
+}
+
+
+
 .border-none {
     border:none;
+    background-color: transparent !important;
 }
 
 #show-workout {
@@ -87,21 +98,27 @@ a:hover {
     color: #624B3C; */
     background-color: rgba(58, 36, 9, 0.6);
     color: #ede7d4;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 2px;
+    
 }
 
 #show-workout:hover {
     background-color: #624B3C;
     color: #ede7d4;   
+   
 }
 
 .bottom-button {
-    background-color: rgba(58, 36, 9, 0.6);
-    color: #ede7d4;
+    background-color: rgba(58, 36, 9, 0.6) !important;
+    color: #ede7d4 !important;
 }
 
 .bottom-button:hover {
-    background-color: #624B3C;
-    color: #ede7d4;
+    background-color: #624B3C !important;
+    color: #ede7d4 !important;
 }
 
 
@@ -112,25 +129,36 @@ a:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: rgba(251, 242, 220, 0.46);
+    /* background-color: rgba(251, 242, 220, 0.46); */
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    background-image: url("../img/donut.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #sidebar-x {
+    color: rgba(251, 242, 220);
+  }
+
+  #sidebar-x:hover {
+    background-color: rgba(251, 242, 220, 0.2);
   }
 
 
-  /* .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  #my-workout-library {
+      background-color:  rgba(251, 242, 220, 0.56);
+      padding: 12px
   }
 
-  .sidebar a:hover {
-    color: #f1f1f1;
-  } */
+  #add-to-library {
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 1px;
+    font-weight: 700px;
+  }
+
 
   .sidebar .closebtn {
     position: absolute;
@@ -162,42 +190,52 @@ a:hover {
     padding: 10px 10px 10px 10px;
   }
 
-  .calories-display{
+  .calories-display {
       padding: 20px;
       font-family: 'Commissioner', sans-serif;
       color: #624B3C;
       font-weight: bold;
+      font-size: large;
+      background-color: rgba(251, 242, 220, 0.46);
+      letter-spacing: 1px;
+
   }
+
+
   
 .workout-length {
     color: #2d2417;
     font-weight: bolder;
+    font-family: 'Commissioner', sans-serif;
+    letter-spacing: 1px;
 }
 
 .workout-type {
     color: #2d2417;
     font-weight: bolder;
+    font-family: 'Commissioner', sans-serif;
+    letter-spacing: 1px;
 }
+
+p {
+    font-family: ‘Commissioner’, sans-serif;
+    text-align: center;
+    color: #624B3C;
+  }
+
 
 /* media query for the user name in the menu */
 @media screen and (max-width: 1750px) {
-    
-    #username {
-         margin-right: 52%;    
-    }
-}
-
-@media screen and (max-width: 1550px) {
     
     #username {
          margin-right: 45%;    
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1550px) {
     
     #username {
-         margin-right: 40%;    
+         margin-right: 25%;    
     }
 }
 
@@ -205,14 +243,14 @@ a:hover {
 @media screen and (max-width: 1300px) {
     
     #username {
-         margin-right: 25%;    
+         margin-right: 20%;    
     }
 }
 
 @media screen and (max-width: 1060px) {
     
     #username {
-         margin-right: 15%;    
+         margin-right: 10%;    
     }
 }
 
@@ -238,154 +276,4 @@ html {
   position: relative;
   align-content: center;
 }
-
-/* INDEX.HTML START */
-
-.nutritionHtml {
-  font-family: ‘Commissioner’, sans-serif;
-  background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 150vh;
-  font-family: ‘Commissioner’, sans-serif;
-  background-image: url(https://media.istockphoto.com/photos/gym-background-with-fitness-equipment-dumbbells-weight-for-workout-picture-id1213615974?k=6&m=1213615974&s=170667a&w=0&h=ttn6MVduG_9cMkZsV7hRqWGPU5xqU4pGoRqWIkY19Ik=);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
-
-h2, h3, h5 {
-  font-family: 'Bad Script', cursive;
-  text-align: center;
-  color: #624B3C;
-}
-
-p {
-  font-family: ‘Commissioner’, sans-serif;
-  text-align: center;
-  color: #624B3C;
-}
-
-.container {
-  box-sizing: inherit;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100vh;
-  display: flex;
-}
-
-.card {
-  margin: auto;
-  background-color: rgba(251, 242, 220, 0.46);
-  border-radius: 5px;
-}
-
-#landing {
-  width: fit-content;
-}
-
-#title {
-  text-align: center;
-}
-
-.welcomeBack {
-  text-align: center;
-}
-
-#submit {
-  width: 200px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-.select button:hover {
-  text-align: center;
-}
-
-#selectNextPage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#workoutBtn {
-  width: 150px;
-  height: 40px;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-#nutritionBtn {
-  width: 150px;
-  height: 40px;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-/* INDEX.HTML STOP */
-
-/* NUTRITION.HTML START */
-
-#nutrition {
-  background-color: #F4F2F0;
-}
-
-#label {
-  font-size: medium;
-}
-
-#find-food {
-  cursor: pointer;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-.row-button {
-  margin-right: 1rem !important;
-}
-
-#total-save {
-  width: 15%;
-  min-width: 100px;
-  height: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
-  cursor: pointer;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-#draw {
-  width: 15%;
-  min-width: 100px;
-  height: 50px;
-  padding-left: 5%;
-  padding-right: 5%;
-  cursor: pointer;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-#food-view {
-  border-radius: 5px;
-}
-
-table {
-  border-collapse: unset;
-}
-td {
-  background-color: hsl(34, 44%, 69%);
-  border-radius: 5px;}
-
-/* NUTRITION.HTML STOP */
 

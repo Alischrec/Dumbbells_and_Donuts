@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,60 +12,83 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
   <title>Dumbbells & Donuts</title>
 </head>
 
 <body>
 
   <main id="main">
-    
+
     <!-- Side Bar -->
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <h4 class="align-center">My Workout Library</h4>
+      <a id="sidebar-x" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <h4 class="align-center" id="my-workout-library">My Workout Library</h4>
       <div id="workout-videos-list" class="align-center">
       </div>
     </div>
 
     <!-- Menu Bar -->
     <ul class="vertical medium-horizontal small-horizontal menu" data-responsive-menu="drilldown small-dropdown">
-      <li class="menu-text" id="username"><a href="#">Dumbbells and Dounuts</a></li>
-      <li id="workoutTab"><a href="#"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
-      <li id="nutritionTab"><a href="#"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
-      <li id="libraryTab"><a href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
-      <li id="statsTab"><a href="#"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
+      <li class="menu-text" id="username"><a class="top-icon">Dumbbells and Dounuts</a></li>
+      <li id="workoutTab"><a class="top-icon" href="#"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
+      <li id="nutritionTab"><a class="top-icon" href="#"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
+      <li id="libraryTab"><a class="top-icon" href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
+      <li id="statsTab"><a class="top-icon"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
     </ul>
     <br>
+
+    <!-- status modal -->
+    <div class="reveal" id="current_stats" data-reveal>
+      <h2 class="align-center">Your current Stats</h2>
+      <p class="lead"><b>Height: <span id="cur-height-feet">5</span> feet <span id="cur-height-inch">3</span> inches</b></p>
+      <p class="lead"><b>Weight: <span id="cur-weight">120</span> pounds</b></p>
+      <p class="lead"><b>BMI: <span id="cur-bmi">20.32</span></b></p>
+      <br>
+      <p>Click here to return to <b><a href="../index.html">Homepage</a></b> if you wish to update your stats</p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <!-- workout length and type modal -->
+    <div class="reveal" id="choose_type_length" data-reveal>
+      <p>Please choose Workout type and length to continue</p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
 
     <!-- Workout Type -->
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
-      <h4>Choose type of workout</h4>
+      <h4><i class="fas fa-dumbbell"></i> Choose type of workout</h4>
     </div>
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
       <div class="card cell small-2 workout-type" id="hiit">
         <img src="./img/HIIT.jpg" />
-        <div class="card-section">
-          <p>HIIT</p>
+        <div class="card-section align-center">
+          HIIT
         </div>
       </div>
       <div class="card cell small-2 workout-type" id="yoga">
         <img src="./img/yoga.jpg" />
-        <div class="card-section">
-          <p>Yoga</p>
+        <div class="card-section align-center">
+          Yoga
         </div>
       </div>
       <div class="card cell small-2 workout-type" id="zumba">
         <img src="./img/zumba.jpg" />
-        <div class="card-section">
-          <p>Zumba</p>
+        <div class="card-section align-center">
+          Zumba
         </div>
       </div>
       <div class="card cell small-2 workout-type" id="pilates">
         <img src="./img/pilates.jpg" />
-        <div class="card-section ">
-          <p>Pilates</p>
+        <div class="card-section align-center">
+          Pilates
         </div>
       </div>
       <div class="cell small-1"></div>
@@ -73,28 +97,28 @@
     <!-- Workout Length Options -->
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
-      <h4>Choose length of workout</h4>
+      <h4> <i class="fas fa-stopwatch"></i> Choose length of workout</h4>
     </div>
     <div class="grid-x grid-padding-x">
       <div class="cell small-1"></div>
       <div class="card cell small-2 workout-length" id="7">
-        <div class="card-section">
-          <p>7 mins</p>
+        <div class="card-section align-center">
+          7 mins
         </div>
       </div>
       <div class="card cell small-2 workout-length" id="15">
-        <div class="card-section">
-          <p>15 mins</p>
+        <div class="card-section align-center">
+          15 mins
         </div>
       </div>
       <div class="card cell small-2 workout-length" id="30">
-        <div class="card-section">
-          <p>30 mins</p>
+        <div class="card-section align-center">
+          30 mins
         </div>
       </div>
       <div class="card cell small-2 workout-length" id="60">
-        <div class="card-section">
-          <p>60 mins</p>
+        <div class="card-section align-center">
+          60 mins
         </div>
       </div>
       <div class="cell small-1"></div>
@@ -103,79 +127,82 @@
 
 
     <!-- search workout button & text area-->
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-3"></div>
-      <div class="cell small-2 border-none">
+    <div class="grid-x grid-padding-x align-center">
+      <div class="cell small-4 border-none">
 
-        <div class="card-section">
-          <button class="button" id="show-workout">Click here to view your Workout</button>
+        <div class="card-section align-center">
+          <button class="medium button" id="show-workout">Click here to view your Workout</button>
+           <!-- hide & unhide -->
+          <div class="card cell small-4 align-center border-none hide" id="calories-info">
+            <!-- calories input -->
+          <p class="calories-display"></p>
+          </div>
         </div>
       </div>
-
-      <!-- hide & unhide -->
-      <div class="card cell small-2 border-none hide" id="calories-info">
-
-        <div class="card-section">
-          <!-- calories input -->
-          <p></p>
-        </div>
-      </div>
-      <div class="cell small-1"></div>
-    </div>
+    </div> 
+  
 
     <br>
 
 
-    <!-- Display Videos -->
+    <!-- Display  -->
 
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-1"></div>
+    <div class="grid-x grid-padding-x align-center">
       <!-- hide & unhide -->
-      <div class="card cell small-4" id="display-video"> 
+      <div class="card cell small-4  border-none hide align-center"  id="video-card">
+        <div id="display-video"></div>
+      </div>
+      <!-- hide & unhide -->
+    </div>
+  
+
+      <!-- calender section -->
+    <div class="grid-x grid-padding-x align-center">
+        <div class="cell small-1"></div>
+      <div class="card cell small-4 vertical medium-horizontal small-horizontal " id="schedule-workout">
         <div class="card-section">
+          <h5>Love the video? Add it to your workout library </h5>
+
           <button class="button medium bottom-button" href="#" id="add-to-library">
             Add to your library
           </button>
-          </div>
-      </div> 
-      <!-- hide & unhide -->
-      <div class="card cell small-4" id="schedule-workout">
 
-          <h5>Can't finish you workout now? <br> <br> Not Worries! Schedule it for later!</h5>
+          <h5>Can't finish workout now? Not Worries! Schedule it for later!</h5>
 
-          <div class="card-section">
-            <form action="/action_page.php">
-              <label for="futureWorkoutTime">Workout Day & Time:</label>
-              <input type="datetime-local" id="workouttime" name="workouttime" />
+          <form action="/action_page.php">
+            <label for="futureWorkoutTime">Workout Day & Time:</label>
+            <input type="datetime-local" id="workouttime" name="workouttime" />
 
-              <button class="button medium buttom-button" id="calender" href="#">
-
-                Add to Calender
-              </button>
-            </form>
-          </div>
-        </div>  
-        <div class="cell small-1"></div>
+            <div title="Add to Calendar" id = "add-calendar" class="addeventatc button hide">
+              Add to Calendar
+              <span class="start">10/31/2020 08:00 AM</span>
+              <span class="end">10/31/2020 10:00 AM</span>
+              <span class="timezone">America/Los_Angeles</span>
+              <span class="title">Summary of the event</span>
+              <span class="description">Description of the event</span>
+              <span class="location">Location of the event</span>
+            </div>
+          </form>
+        </div>
       </div>
+      <div class="cell small-1"></div>
     </div>
+    <br>
+    <br>
 
-      <!-- Calender section -->
 
-      <div class="grid-x grid-padding-x">
-        <div class="cell small-1"></div>
-        
-      </div>
   </main>
 
-
-  <!-- Compressed JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
-    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous">
-    </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="js/script.js"></script>
   <!-- Add to Calendar Javascript-->
   <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+  <script>
+    $(document).ready(function () {
+      $(document).foundation();
+    });
+  </script>
+
+  
 </body>
 
 </html>
