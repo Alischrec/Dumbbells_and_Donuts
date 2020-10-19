@@ -186,15 +186,7 @@ $("#workouttime").change(function (event) {
   // $(".end").html(dt);
   // $(".title").html("Workout");
   // $(".description").html("Test");
-  $("#add-calendar").attr("class", "addeventatc show");
-});
-$("#statsTab").on("click",function(){
-  if (typeof localStorage.userProfile !== "undefined") {
-    let currentStats = JSON.parse(localStorage.getItem("userProfile"));
-    $("#cur-height-feet").html(currentStats.heightFoot);
-    $("#cur-height-inch").html(currentStats.heightInch);
-    $("#cur-weight").html(currentStats.weight);
-    $("#cur-bmi").html(currentStats.bmi);
-    $("#current_stats").foundation('open');
-}
+
+  $("#add-calendar").attr("class","addeventatc show");
 })
+
