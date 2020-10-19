@@ -2,7 +2,7 @@
 /* WORKOUT.HTML START */
 
 .card {
-    margin: auto;
+    margin: 2%;
     border-radius: 5px;
     background-color: rgba(251, 242, 220, 0.46);
 }
@@ -16,7 +16,7 @@ img {
     margin-top: 10px;
 }
 
-body {
+#main {
     font-family: 'Commissioner', sans-serif;
     color: #624B3C;
     background-color: #ede7d4;
@@ -34,9 +34,9 @@ body {
 #username {
     margin-right: 57%;
     padding: 0px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-bottom: 5px; 
-    font-size: 400px;
+    font-size: px;
 }
 
 h4 {
@@ -54,11 +54,12 @@ h5 {
     font-family: 'Bad Script', cursive;
     color: #624B3C;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .workout-selected {
-    background-color: #624B3C;
-    color: white;
+    background-color: #624B3C !important;
+    color: rgba(251, 242, 220) !important;
 }
 
 .align-center {
@@ -66,19 +67,29 @@ h5 {
     align-items: center;
 }
 
-a {
+.top-icon {
     color: #624B3C;
     font-family: 'Bad Script', cursive;
     font-size: large;
+    
 }
 
-a:hover {
+.top-icon:hover {
     background-color: #ede7d4;
     color: #2d2417;
 }
 
+.top-icon:focus {
+    background-color: #624B3C;
+    color: rgba(251, 242, 220);
+    outline: 0;
+}
+
+
+
 .border-none {
     border:none;
+    background-color: transparent !important;
 }
 
 #show-workout {
@@ -86,22 +97,27 @@ a:hover {
     color: #624B3C; */
     background-color: rgba(58, 36, 9, 0.6);
     color: #ede7d4;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 2px;
+    
 }
 
 #show-workout:hover {
     background-color: #624B3C;
-    color: #ede7d4;
-    
+    color: #ede7d4;   
+   
 }
 
 .bottom-button {
-    background-color: rgba(58, 36, 9, 0.6);
-    color: #ede7d4;
+    background-color: rgba(58, 36, 9, 0.6) !important;
+    color: #ede7d4 !important;
 }
 
 .bottom-button:hover {
-    background-color: #624B3C;
-    color: #ede7d4;
+    background-color: #624B3C !important;
+    color: #ede7d4 !important;
 }
 
 
@@ -112,25 +128,36 @@ a:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #ccc;
+    /* background-color: rgba(251, 242, 220, 0.46); */
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    background-image: url("../img/donut.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #sidebar-x {
+    color: rgba(251, 242, 220);
+  }
+
+  #sidebar-x:hover {
+    background-color: rgba(251, 242, 220, 0.2);
   }
 
 
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+  #my-workout-library {
+      background-color:  rgba(251, 242, 220, 0.56);
+      padding: 12px
   }
 
-  .sidebar a:hover {
-    color: #f1f1f1;
+  #add-to-library {
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 1px;
+    font-weight: 700px;
   }
+
 
   .sidebar .closebtn {
     position: absolute;
@@ -153,51 +180,59 @@ a:hover {
     background-color: #444;
   }
 
+/* ASK GARIMA ABOUT THIS! */
   main {
     transition: margin-left .5s;
-    /* padding: 16px; */
   }
 
   .workout-library-display {
     padding: 10px 10px 10px 10px;
   }
 
-  .calories-display{
+  .calories-display {
       padding: 20px;
       font-family: 'Commissioner', sans-serif;
       color: #624B3C;
       font-weight: bold;
+      font-size: large;
+      background-color: rgba(251, 242, 220, 0.46);
+      letter-spacing: 1px;
+
   }
-  
+
 .workout-length {
     color: #2d2417;
     font-weight: bolder;
+    font-family: 'Commissioner', sans-serif;
+    letter-spacing: 1px;
 }
 
 .workout-type {
     color: #2d2417;
     font-weight: bolder;
+    font-family: 'Commissioner', sans-serif;
+    letter-spacing: 1px;
 }
+
+p {
+    font-family: ‘Commissioner’, sans-serif;
+    text-align: center;
+    color: #624B3C;
+  }
+
 
 /* media query for the user name in the menu */
 @media screen and (max-width: 1750px) {
-    
-    #username {
-         margin-right: 52%;    
-    }
-}
-
-@media screen and (max-width: 1550px) {
     
     #username {
          margin-right: 45%;    
     }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1550px) {
     
     #username {
-         margin-right: 40%;    
+         margin-right: 25%;    
     }
 }
 
@@ -205,14 +240,14 @@ a:hover {
 @media screen and (max-width: 1300px) {
     
     #username {
-         margin-right: 25%;    
+         margin-right: 20%;    
     }
 }
 
 @media screen and (max-width: 1060px) {
     
     #username {
-         margin-right: 15%;    
+         margin-right: 10%;    
     }
 }
 
@@ -404,4 +439,5 @@ td {
 }
 
 /* NUTRITION.HTML STOP */
+
 

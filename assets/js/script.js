@@ -1,13 +1,11 @@
 let workoutType = "";
 let workoutLength = "";
 let videoFrame = "";
-
 if (typeof localStorage.myworkouts === "undefined") {
   var workoutLibrary = [];
 } else {
   var workoutLibrary = JSON.parse(localStorage.getItem("myworkouts"));
 }
-
 function getmetValues(type) {
   let metValue = 1;
   switch (type) {
@@ -41,12 +39,6 @@ function caloriesBurned() {
   console.log(Math.floor(calburnt));
   return Math.floor(calburnt);
 }
-$(document).ready(function () {
-  // if (typeof localStorage.userProfile !== undefined) {
-  //     $(".welcomeBack").attr("class","welcomeBack show");
-  //     $("#title").attr("class","hide");
-  // }
-});
 $("#submit").on("click", function (event) {
   event.preventDefault();
   let varname = fullName.value;
@@ -99,20 +91,17 @@ $(".workout-length").on("click", function (event) {
     .toggleClass("workout-selected")
     .siblings()
     .removeClass("workout-selected");
-  let calburnt = caloriesBurned();
-  console.log(calburnt);
 });
 $("#show-workout").on("click", function (event) {
-  let apikey = "AIzaSyAgUshtKqb_q6zx4neWBEy9O1ja2d9cIu0";
+  //let apikey = "AIzaSyAgUshtKqb_q6zx4neWBEy9O1ja2d9cIu0";
+  let apikey = "AIzaSyATXGWTTIpBQirk6szqrA9rSVqCJ2kXZhw";
   event.preventDefault();
   if (workoutType === "" || workoutLength === "") {
-    $("#calories-info").html(
-      "<p> Please choose workout type and length to continue </p>"
-    );
+   $("#choose_type_length").foundation('open');
     return;
   }
   let url =
-    "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&order=rating&q=" +
+    "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=" +
     workoutLength +
     " min " +
     workoutType +
@@ -146,18 +135,20 @@ $("#show-workout").on("click", function (event) {
           " calories for you </p>"
       );
       $("#display-video").html(videoFrame);
-      $("#display-video").attr("class", "card cell small-4 show");    
-      $("#schedule-workout").attr("class", "card cell small-4 show");    
-      $("#calories-info").attr("class", "card cell small-4 border-none show");    
+      $("#video-card").attr("class", "card-video cell small-4 show");
+      $("#schedule-workout").attr("class", "card cell small-4 show");
+      $("#calories-info").attr("class", "card cell small-4 border-none show");
     });
   });
 });
 $("#add-to-library").on("click", function (event) {
   event.preventDefault();
-  let video_small = videoFrame.replace('width="608"', 'width="200"');
-  video_small = video_small.replace('height="342"', 'height="112.5"');
-  workoutLibrary.push(video_small);
-  localStorage.setItem("myworkouts", JSON.stringify(workoutLibrary));
+  if (videoFrame !== "") {
+    let video_small = videoFrame.replace('width="608"', 'width="200"');
+    video_small = video_small.replace('height="342"', 'height="112.5"');
+    workoutLibrary.push(video_small);
+    localStorage.setItem("myworkouts", JSON.stringify(workoutLibrary));
+  }
   loadWorkoutLibrary();
 });
 function loadWorkoutLibrary() {
@@ -183,13 +174,19 @@ function closeNav() {
   document.getElementById("mySidebar").style.width = "0";
   document.getElementById("main").style.marginLeft = "0";
 }
-$("#workoutTime").change(function(event){
-  //alert ("function called" + workoutTime.value);
+$("#libraryTab").on("click", function (event) {
+  event.preventDefault();
+  loadWorkoutLibrary();
+});
+$("#workouttime").change(function (event) {
+  alert ("function called" + workouttime.value);
   // $(".start").html = workoutTime.value;
   // let dt = new Date(workoutTime.value);
   // dt.setMinutes(dt.getMinutes() + 30);
   // $(".end").html(dt);
   // $(".title").html("Workout");
   // $(".description").html("Test");
+
   $("#add-calendar").attr("class","addeventatc show");
 })
+
