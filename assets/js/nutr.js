@@ -266,3 +266,10 @@ $("#total-save").on("click", function(event) {
  localStorage.setItem("calHist",JSON.stringify(calHist));
  localStorage.setItem("daysHist",JSON.stringify(daysHist));
 });
+
+$("#clear-totals").on("click",function(event){
+  localStorage.removeItem("calHist");
+  localStorage.removeItem("daysHist");
+  localStorage.removeItem("lastTotal");
+  
+})
