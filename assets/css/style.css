@@ -1,5 +1,4 @@
 
-
 /* WORKOUT.HTML START */
 
 html {
@@ -189,9 +188,9 @@ h5 {
     background-color: #444;
   }
 
+/* ASK GARIMA ABOUT THIS! */
   main {
     transition: margin-left .5s;
-    /* padding: 16px; */
   }
 
   .workout-library-display {
@@ -209,8 +208,6 @@ h5 {
 
   }
 
-
-  
 .workout-length {
     color: #2d2417;
     font-weight: bolder;
@@ -277,4 +274,178 @@ p {
 }
 
 /* WORKOUT.HTML ENDS */
+
+
+html {
+  /* Positioning */
+  position: relative;
+  align-content: center;
+}
+
+
+/* INDEX.HTML START */
+
+.nutritionHtml {
+  font-family: ‘Commissioner’, sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 150vh;
+}
+
+h2, h3 {
+
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  color: #624B3C;
+}
+
+p {
+  font-family: ‘Commissioner’, sans-serif;
+  text-align: center;
+  color: #624B3C;
+}
+
+.container {
+  box-sizing: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  display: flex;
+}
+
+.indexCard {
+  margin: auto;
+  background-color: rgba(251, 242, 220, 0.46);
+  border-radius: 5px;
+}
+
+#landing {
+  width: fit-content;
+}
+
+#title {
+  text-align: center;
+}
+
+.welcomeBack {
+  text-align: center;
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  color: #624B3C;
+}
+
+#submit {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+.select button:hover {
+  text-align: center;
+}
+
+#selectNextPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#workoutBtn {
+  width: 150px;
+  height: 40px;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+#nutritionBtn {
+  width: 150px;
+  height: 40px;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* INDEX.HTML STOP */
+
+/* NUTRITION.HTML START */
+
+.nutritionHtml {
+  font-family: ‘Commissioner’, sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 150vh;
+}
+
+#nutrition {
+  background-color: #F4F2F0;
+}
+
+#label {
+  font-size: medium;
+}
+
+#find-food {
+  cursor: pointer;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+.row-button {
+  margin-right: 1rem !important;
+}
+
+#total-save {
+  width: 15%;
+  min-width: 100px;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  cursor: pointer;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+#draw {
+  width: 15%;
+  min-width: 100px;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  cursor: pointer;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+#food-view {
+  border-radius: 5px;
+}
+
+table {
+  border-collapse: unset;
+}
+
+td {
+  background-color: hsl(34, 44%, 69%);
+  border-radius: 5px;
+}
+
+#curve_chart {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* NUTRITION.HTML STOP */
+
 
