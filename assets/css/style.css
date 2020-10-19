@@ -402,6 +402,17 @@ p {
   border-radius: 5px;
 }
 
+#clear-totals{
+width: 15%;
+  min-width: 100px;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  cursor: pointer;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
 #draw {
   width: 15%;
   min-width: 100px;
