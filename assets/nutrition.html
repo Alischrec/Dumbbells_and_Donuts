@@ -14,6 +14,15 @@
 </head>
 
 <body class='nutritionHtml'>
+    
+ <!-- Menu Bar -->
+    <ul class="vertical medium-horizontal small-horizontal menu" data-responsive-menu="drilldown small-dropdown">
+      <li class="menu-text" id="username"><a href="#">Dumbbells and Donuts</a></li>
+      <li id="workoutTab"><a href="workout.html"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
+      <li id="nutritionTab"><a href="nutrition.html"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
+      <li id="libraryTab"><a href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
+      <li id="statsTab"><a href="#"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
+    </ul>
 
     <div class='container'>
         <div class="card-section small-12 small-centered">
@@ -33,7 +42,8 @@
                         </div>
                     </div>
                 </div>
-
+                <!---delete later-->
+                <div id="no-food"></div>
                 <div class='row'>
                     <table class="columns small-12 small-centered stack" style="width:100%" id="food-view">
                         <tr>
@@ -75,11 +85,11 @@
                             See Graph
                         </button>
                     </div>
-                    <div id='curve_chart'></div>
+                    <div id='curve_chart' style=" opacity: 0.7;width: fit-content;"></div>
                 </div>
             </form>
 
-            <div id="edamam-badge" data-color="white"></div>
+            <div id="edamam-badge" data-color="beige"></div>
         </div>
     </div>
 
@@ -93,6 +103,9 @@
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
         integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
     <script src="./js/nutr.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src ="./js/draw.js"> </script>
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
 </body>
 
 </html>

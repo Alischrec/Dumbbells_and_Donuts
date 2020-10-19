@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Compressed CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+    integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Dumbbells & Donuts</title>
+</head>
+
+<body>
+
+  <main id="main">
+    
+    <!-- Side Bar -->
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <h4 class="align-center">My Workout Library</h4>
+      <div id="workout-videos-list" class="align-center">
+      </div>
+    </div>
+
+    <!-- Menu Bar -->
+    <ul class="vertical medium-horizontal small-horizontal menu" data-responsive-menu="drilldown small-dropdown">
+      <li class="menu-text" id="username"><a href="#">Dumbbells and Donuts</a></li>
+      <li id="workoutTab"><a href="workout.html"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
+      <li id="nutritionTab"><a href="nutrition.html"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
+      <li id="libraryTab"><a href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
+      <li id="statsTab"><a href="#"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
+    </ul>
+    <br>
+
+    <!-- Workout Type -->
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-1"></div>
+      <h4>Choose type of workout</h4>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-1"></div>
+      <div class="card cell small-2 workout-type" id="hiit">
+        <img src="./img/HIIT.jpg" />
+        <div class="card-section">
+          <p>HIIT</p>
+        </div>
+      </div>
+      <div class="card cell small-2 workout-type" id="yoga">
+        <img src="./img/yoga.jpg" />
+        <div class="card-section">
+          <p>Yoga</p>
+        </div>
+      </div>
+      <div class="card cell small-2 workout-type" id="zumba">
+        <img src="./img/zumba.jpg" />
+        <div class="card-section">
+          <p>Zumba</p>
+        </div>
+      </div>
+      <div class="card cell small-2 workout-type" id="pilates">
+        <img src="./img/pilates.jpg" />
+        <div class="card-section ">
+          <p>Pilates</p>
+        </div>
+      </div>
+      <div class="cell small-1"></div>
+    </div>
+
+    <!-- Workout Length Options -->
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-1"></div>
+      <h4>Choose length of workout</h4>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-1"></div>
+      <div class="card cell small-2 workout-length" id="7">
+        <div class="card-section">
+          <p>7 mins</p>
+        </div>
+      </div>
+      <div class="card cell small-2 workout-length" id="15">
+        <div class="card-section">
+          <p>15 mins</p>
+        </div>
+      </div>
+      <div class="card cell small-2 workout-length" id="30">
+        <div class="card-section">
+          <p>30 mins</p>
+        </div>
+      </div>
+      <div class="card cell small-2 workout-length" id="60">
+        <div class="card-section">
+          <p>60 mins</p>
+        </div>
+      </div>
+      <div class="cell small-1"></div>
+    </div>
+    <br>
+
+
+    <!-- search workout button & text area-->
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-3"></div>
+      <div class="cell small-2 border-none">
+
+        <div class="card-section">
+          <button class="button" id="show-workout">Click here to view your Workout</button>
+        </div>
+      </div>
+
+      <!-- hide & unhide -->
+      <div class="card cell small-2 border-none hide" id="calories-info">
+
+        <div class="card-section">
+          <!-- calories input -->
+          <p></p>
+        </div>
+      </div>
+      <div class="cell small-1"></div>
+    </div>
+
+    <br>
+
+
+    <!-- Display Videos -->
+
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-1"></div>
+      <!-- hide & unhide -->
+      <div class="card cell small-4" id="display-video"> 
+        <div class="card-section">
+          <button class="button medium bottom-button" href="#" id="add-to-library">
+            Add to your library
+          </button>
+          </div>
+      </div> 
+      <!-- hide & unhide -->
+      <div class="card cell small-4" id="schedule-workout">
+
+          <h5>Can't finish you workout now? <br> <br> Not Worries! Schedule it for later!</h5>
+
+          <div class="card-section">
+            <form action="/action_page.php">
+              <label for="futureWorkoutTime">Workout Day & Time:</label>
+              <input type="datetime-local" id="workouttime" name="workouttime" />
+
+              <button class="button medium buttom-button" id="calender" href="#">
+
+                Add to Calender
+              </button>
+            </form>
+          </div>
+        </div>  
+        <div class="cell small-1"></div>
+      </div>
+    </div>
+
+      <!-- Calender section -->
+
+      <div class="grid-x grid-padding-x">
+        <div class="cell small-1"></div>
+        
+      </div>
+  </main>
+
+
+  <!-- Compressed JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+    integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- Add to Calendar Javascript-->
+  <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+</body>
+
+</html>
