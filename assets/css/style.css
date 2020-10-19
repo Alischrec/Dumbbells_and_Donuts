@@ -40,11 +40,11 @@ img {
 }
 
 #logo {
-    margin-right: 57%;
-    padding: 0px;
+    margin-right: 50%;
+    padding: 0%;
     margin-left: 40px;
     margin-bottom: 5px; 
-    font-size: px;
+    font-size: 20px;
 }
 
 h4 {
@@ -61,7 +61,7 @@ h5 {
     margin-left: 15px;
     font-family: 'Bad Script', cursive;
     color: #624B3C;
-    font-weight: bold;
+    font-weight: bolder;
     letter-spacing: 1px;
 }
 
@@ -106,7 +106,7 @@ h5 {
     background-color: rgba(58, 36, 9, 0.6);
     color: #ede7d4;
     font-weight: bold;
-    font-size: larger;
+    font-size: 140%;
     font-family: 'Bad Script', cursive;
     letter-spacing: 2px;
     
@@ -163,9 +163,14 @@ h5 {
   #add-to-library {
     font-family: 'Bad Script', cursive;
     letter-spacing: 1px;
-    font-weight: 700px;
+    font-weight: bold;
+    font-size: 120%;
   }
 
+  #futureWorkoutTime {
+      font-size: large;
+      color: #624B3C;
+  }
 
   .sidebar .closebtn {
     position: absolute;
@@ -233,43 +238,44 @@ p {
 @media screen and (max-width: 1750px) {
     
     #logo {
-         margin-right: 45%;    
+         margin-right: 50%;    
     }
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1580px) {
     
     #logo {
-         margin-right: 25%;    
+         margin-right: 40%;    
     }
 }
 
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1310px) {
+    
+    #logo {
+         margin-right: 30%;    
+    }
+}
+
+@media screen and (max-width: 1130px) {
     
     #logo {
          margin-right: 20%;    
     }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 980px) {
     
     #logo {
-         margin-right: 10%;    
-    }
-}
-
-@media screen and (max-width: 930px) {
-    
-    #logo {
-         margin-right: 2%;    
+         margin-right: 5%;    
     }
 }
 
 @media screen and (max-width: 830px) {
     
     #logo {
-         margin-right: 4%;    
+         margin-right: 0%;  
+         margin-left: 15px;  
     }
 }
 
