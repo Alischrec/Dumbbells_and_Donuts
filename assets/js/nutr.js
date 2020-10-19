@@ -271,5 +271,6 @@ $("#clear-totals").on("click",function(event){
   localStorage.removeItem("calHist");
   localStorage.removeItem("daysHist");
   localStorage.removeItem("lastTotal");
+  todayLast = false;
   
 })
