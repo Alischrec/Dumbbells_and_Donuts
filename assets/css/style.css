@@ -17,6 +17,7 @@ img {
 }
 
 #main {
+    transition: margin-left .5s;
     font-family: 'Commissioner', sans-serif;
     color: #624B3C;
     background-color: #ede7d4;
@@ -176,10 +177,6 @@ h5 {
 
   .openbtn:hover {
     background-color: #444;
-  }
-
-  main {
-    transition: margin-left .5s;
   }
 
   .workout-library-display {
