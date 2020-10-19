@@ -1,4 +1,98 @@
 
+/* INDEX.HTML START */
+
+
+.nutritionHtml {
+  font-family: ‘Commissioner’, sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 150vh;
+}
+
+h2, h3 {
+
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  color: #624B3C;
+}
+
+p {
+  font-family: ‘Commissioner’, sans-serif;
+  text-align: center;
+  color: #624B3C;
+}
+
+.container {
+  box-sizing: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  display: flex;
+}
+
+.indexCard {
+  margin: auto;
+  background-color: rgba(251, 242, 220, 0.46);
+  border-radius: 5px;
+}
+
+#landing {
+  width: fit-content;
+}
+
+#title {
+  text-align: center;
+}
+
+.welcomeBack {
+  text-align: center;
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  color: #624B3C;
+}
+
+#submit {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+.select button:hover {
+  text-align: center;
+}
+
+#selectNextPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#workoutBtn {
+  width: 150px;
+  height: 40px;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+#nutritionBtn {
+  width: 150px;
+  height: 40px;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* INDEX.HTML STOP */
 
 /* WORKOUT.HTML START */
 
@@ -239,102 +333,6 @@ html {
   position: relative;
   align-content: center;
 }
-
-/* INDEX.HTML START */
-
-
-.nutritionHtml {
-  font-family: ‘Commissioner’, sans-serif;
-  background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 150vh;
-}
-
-h2, h3 {
-
-  font-family: 'Bad Script', cursive;
-  text-align: center;
-  color: #624B3C;
-}
-
-p {
-  font-family: ‘Commissioner’, sans-serif;
-  text-align: center;
-  color: #624B3C;
-}
-
-.container {
-  box-sizing: inherit;
-  margin-right: auto;
-  margin-left: auto;
-  height: 100vh;
-  display: flex;
-}
-
-.indexCard {
-  margin: auto;
-  background-color: rgba(251, 242, 220, 0.46);
-  border-radius: 5px;
-}
-
-#landing {
-  width: fit-content;
-}
-
-#title {
-  text-align: center;
-}
-
-.welcomeBack {
-  text-align: center;
-  font-family: 'Bad Script', cursive;
-  text-align: center;
-  color: #624B3C;
-}
-
-#submit {
-  width: 200px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-.select button:hover {
-  text-align: center;
-}
-
-#selectNextPage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#workoutBtn {
-  width: 150px;
-  height: 40px;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-#nutritionBtn {
-  width: 150px;
-  height: 40px;
-  background-color: #624B3C;
-  border-radius: 5px;
-}
-
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-/* INDEX.HTML STOP */
-
 
 /* NUTRITION.HTML START */
 
