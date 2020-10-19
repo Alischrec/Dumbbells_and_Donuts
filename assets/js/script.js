@@ -101,8 +101,7 @@ $(".workout-length").on("click", function (event) {
 });
 
 $("#show-workout").on("click", function (event) {
-  //let apikey = "AIzaSyAgUshtKqb_q6zx4neWBEy9O1ja2d9cIu0";
-  let apikey = "AIzaSyATXGWTTIpBQirk6szqrA9rSVqCJ2kXZhw";
+  let apikey = "AIzaSyAgUshtKqb_q6zx4neWBEy9O1ja2d9cIu0";
   event.preventDefault();
   if (workoutType === "" || workoutLength === "") {
    $("#choose_type_length").foundation('open');
