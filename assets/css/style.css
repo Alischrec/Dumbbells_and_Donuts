@@ -6,7 +6,7 @@ html {
 
 /* INDEX.HTML START */
 
-body {
+.indexHtml {
   font-family: ‘Commissioner’, sans-serif;
   background-image: url(https://media.istockphoto.com/photos/gym-background-with-fitness-equipment-dumbbells-weight-for-workout-picture-id1213615974?k=6&m=1213615974&s=170667a&w=0&h=ttn6MVduG_9cMkZsV7hRqWGPU5xqU4pGoRqWIkY19Ik=);
   background-size: cover;
@@ -14,15 +14,7 @@ body {
   min-height: 100vh;
 }
 
-.nutritionHtml {
-  font-family: ‘Commissioner’, sans-serif;
-  background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 150vh;
-}
-
-h2, h3, h5 {
+h2, h3 {
   font-family: 'Bad Script', cursive;
   text-align: center;
   color: #624B3C;
@@ -42,7 +34,7 @@ p {
   display: flex;
 }
 
-.card {
+.indexCard {
   margin: auto;
   background-color: rgba(251, 242, 220, 0.46);
   border-radius: 5px;
@@ -58,6 +50,9 @@ p {
 
 .welcomeBack {
   text-align: center;
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  color: #624B3C;
 }
 
 #submit {
@@ -102,7 +97,16 @@ p {
 
 /* INDEX.HTML STOP */
 
+
 /* NUTRITION.HTML START */
+
+.nutritionHtml {
+  font-family: ‘Commissioner’, sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 150vh;
+}
 
 #nutrition {
   background-color: #F4F2F0;
@@ -151,8 +155,16 @@ p {
 table {
   border-collapse: unset;
 }
+
 td {
   background-color: hsl(34, 44%, 69%);
-  border-radius: 5px;}
+  border-radius: 5px;
+}
+
+#curve_chart {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 
 /* NUTRITION.HTML STOP */
