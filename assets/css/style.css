@@ -1,0 +1,484 @@
+
+/* WORKOUT.HTML START */
+
+/* All html styling */
+html {
+    /* Positioning */
+    position: relative;
+    align-content: center;
+  }
+ 
+/* Individual cards */
+.card {
+    margin: 2%;
+    border-radius: 5px;
+    background-color: rgba(251, 242, 220, 0.46);
+}
+
+/* Buttons */
+.button {
+    border-radius: 5px;
+    background-color: #624B3C;
+}  
+
+/* Image placement within card */
+img {
+    margin-top: 10px;
+}
+
+/* Full style across the body */
+#main {
+    transition: margin-left .5s;
+    font-family: 'Commissioner', sans-serif;
+    color: #624B3C;
+    background-color: #ede7d4;
+    background-image: url(https://image.freepik.com/free-photo/abstract-blur-fitness-gym-with-equipment-background_34168-454.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+} 
+
+/* Menu placement */
+.menu {
+    padding-top: 10px;
+    background-color: rgba(241, 224, 181, 0.46);
+}
+
+/* Logo placement for menu list */
+#logo {
+    margin-right: 50%;
+    padding: 0%;
+    margin-left: 40px;
+    margin-bottom: 5px; 
+    font-size: 20px;
+}
+
+h4 {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'Bad Script', cursive;
+    color: #624B3C; 
+    font-weight: bold;
+}
+
+h5 {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-family: 'Bad Script', cursive;
+    color: #624B3C;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+/* Darken card after selection */
+.workout-selected {
+    background-color: #624B3C !important;
+    color: rgba(251, 242, 220) !important;
+}
+
+/* Alignment */
+.align-center {
+    text-align: center;
+    align-items: center;
+}
+
+/* Style for menu verbiage */
+.top-icon {
+    color: #624B3C;
+    font-family: 'Bad Script', cursive;
+    font-size: large;
+}
+
+/* Color change when hovering over menu options */
+.top-icon:hover {
+    background-color: #ede7d4;
+    color: #2d2417;
+}
+
+.top-icon:focus {
+    background-color: #624B3C;
+    color: rgba(251, 242, 220);
+    outline: 0;
+}
+
+/* Removal of border */
+.border-none {
+    border:none;
+    background-color: transparent !important;
+}
+
+/* Button to view display after input */
+#show-workout {
+    background-color: rgba(58, 36, 9, 0.6);
+    color: #ede7d4;
+    font-weight: bold;
+    font-size: 140%;
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 2px;  
+}
+
+/* Button hover color change */
+#show-workout:hover {
+    background-color: #624B3C;
+    color: #ede7d4;   
+}
+
+/* Add to library button colors */
+.bottom-button {
+    background-color: rgba(58, 36, 9, 0.6) !important;
+    color: #ede7d4 !important;
+}
+
+/* Add to libary hover color change */
+.bottom-button:hover {
+    background-color: #624B3C !important;
+    color: #ede7d4 !important;
+}
+
+/* Sidebar with library styling */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-image: url("../img/donut.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+/* Sidebar Exit color */
+  #sidebar-x {
+    color: rgba(251, 242, 220);
+  }
+
+  #sidebar-x:hover {
+    background-color: rgba(251, 242, 220, 0.2);
+  }
+
+/* Sidebar styling */
+  #my-workout-library {
+      background-color:  rgba(251, 242, 220, 0.56);
+      padding: 12px
+  }
+
+/* Button */
+  #add-to-library {
+    font-family: 'Bad Script', cursive;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 120%;
+  }
+
+/* Calendar styling */
+  #futureWorkoutTime {
+      font-size: large;
+      color: #624B3C;
+  }
+
+/* Sidebar Exit button */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+/* Button */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+/* Button hover color change */
+  .openbtn:hover {
+    background-color: #444;
+  }
+
+  .workout-library-display {
+    padding: 10px 10px 10px 10px;
+  }
+
+/* Display for video information */
+  .calories-display {
+      padding: 20px;
+      font-family: 'Commissioner', sans-serif;
+      color: #624B3C;
+      font-weight: bold;
+      font-size: large;
+      background-color: rgba(251, 242, 220, 0.46);
+      letter-spacing: 1px;
+  }
+
+/* Text styling for length card */
+.workout-length {
+    color: #2d2417;
+    font-weight: bolder;
+    font-family: 'Commissioner', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Text styling for type card */
+.workout-type {
+    color: #2d2417;
+    font-weight: bolder;
+    font-family: 'Commissioner', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* Paragraph styling */
+p {
+    font-family: ‘Commissioner’, sans-serif;
+    text-align: center;
+    color: #624B3C;
+  }
+
+
+/* media query for the user name in the menu */
+@media screen and (max-width: 1750px) {
+    #logo {
+         margin-right: 50%;    
+    }
+}
+
+@media screen and (max-width: 1580px) {
+    #logo {
+         margin-right: 40%;    
+    }
+}
+
+
+@media screen and (max-width: 1310px) {
+    #logo {
+         margin-right: 30%;    
+    }
+}
+
+@media screen and (max-width: 1130px) {
+    #logo {
+         margin-right: 20%;    
+    }
+}
+
+@media screen and (max-width: 980px) {
+    #logo {
+         margin-right: 5%;    
+    }
+}
+
+@media screen and (max-width: 830px) {
+    #logo {
+         margin-right: 0%;  
+         margin-left: 15px;  
+    }
+}
+
+/* WORKOUT.HTML ENDS */
+
+/* All html positioning */
+html {
+  /* Positioning */
+  position: relative;
+  align-content: center;
+}
+
+/* INDEX.HTML START */
+
+/* Body styling and background image */
+.indexHtml {
+  font-family: ‘Commissioner’, sans-serif;
+  background-image: url(https://media.istockphoto.com/photos/gym-background-with-fitness-equipment-dumbbells-weight-for-workout-picture-id1213615974?k=6&m=1213615974&s=170667a&w=0&h=ttn6MVduG_9cMkZsV7hRqWGPU5xqU4pGoRqWIkY19Ik=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Text styling */
+h2, h3 {
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  color: #624B3C;
+}
+
+/* Paragraph styling */
+p {
+  font-family: ‘Commissioner’, sans-serif;
+  text-align: center;
+  color: #624B3C;
+}
+
+/* Container positioning */
+.container {
+  box-sizing: inherit;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100vh;
+  display: flex;
+}
+
+/* Card color and positioning */
+.indexCard {
+  margin: auto;
+  background-color: rgba(251, 242, 220, 0.46);
+  border-radius: 5px;
+}
+
+/* Center title */
+#title {
+  text-align: center;
+}
+
+/* Hidden elements style */
+.welcomeBack {
+  text-align: center;
+  font-family: 'Bad Script', cursive;
+  text-align: center;
+  color: #624B3C;
+}
+
+/* Submit button positioning */
+#submit {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+/* Button hover positioning */
+.select button:hover {
+  text-align: center;
+}
+
+/* Hidden element positioning */
+#selectNextPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Workout Button design */
+#workoutBtn {
+  width: 150px;
+  height: 40px;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+/* Nutrition Button design */
+#nutritionBtn {
+  width: 150px;
+  height: 40px;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+/* Hide and Show: */
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* INDEX.HTML STOP */
+
+/* NUTRITION.HTML START */
+
+/* Body stying and background image */
+.nutritionHtml {
+  font-family: ‘Commissioner’, sans-serif;
+  background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 150vh;
+}
+
+/* Label for input */
+#label {
+  font-size: medium;
+}
+
+/* Button color and positioning */
+#find-food {
+  cursor: pointer;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+/* Button positioning */
+.row-button {
+  margin-right: 1rem !important;
+}
+
+/* Save Total Button color and positioning */
+#total-save {
+  width: 15%;
+  min-width: 100px;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  cursor: pointer;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+/* Clear Total Button color and positioning */
+#clear-totals{
+width: 15%;
+  min-width: 100px;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  cursor: pointer;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+/* Graph Button color and positioning */
+#draw {
+  width: 15%;
+  min-width: 100px;
+  height: 50px;
+  padding-left: 5%;
+  padding-right: 5%;
+  cursor: pointer;
+  background-color: #624B3C;
+  border-radius: 5px;
+}
+
+/* Border Radius for API content */
+#food-view {
+  border-radius: 5px;
+}
+
+/* Table border for small views */
+table {
+  border-collapse: unset;
+}
+
+/* Table contents color and sizing */
+td {
+  background-color: hsl(34, 44%, 69%);
+  border-radius: 5px;
+}
+
+/* Chart positioning */
+#curve_chart {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* NUTRITION.HTML STOP */
