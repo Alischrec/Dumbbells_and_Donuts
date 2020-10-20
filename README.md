@@ -23,7 +23,7 @@ View the [Github-pages](https://alischrec.github.io/Dumbbells_and_Donuts/)
 ## About the Project:
 The focus of this project was to utilize two or more server-side APIs to build a positive interractive user experience. This project was broken down into a front-end and back-end team who worked in tandem to produce an interractive web-app. 
 
-![Project Gif](assets/image/gif.gif)
+![Project Gif](assets/img/gif.gif)
 
 ### HTML:
  * [index.html](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/index.html)
