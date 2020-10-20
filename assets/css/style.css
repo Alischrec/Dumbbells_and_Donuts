@@ -294,6 +294,7 @@ html {
 
 /* INDEX.HTML START */
 
+/* Body styling and background image */
 .indexHtml {
   font-family: ‘Commissioner’, sans-serif;
   background-image: url(https://media.istockphoto.com/photos/gym-background-with-fitness-equipment-dumbbells-weight-for-workout-picture-id1213615974?k=6&m=1213615974&s=170667a&w=0&h=ttn6MVduG_9cMkZsV7hRqWGPU5xqU4pGoRqWIkY19Ik=);
@@ -302,19 +303,21 @@ html {
   min-height: 100vh;
 }
 
+/* Text styling */
 h2, h3 {
-
   font-family: 'Bad Script', cursive;
   text-align: center;
   color: #624B3C;
 }
 
+/* Paragraph styling */
 p {
   font-family: ‘Commissioner’, sans-serif;
   text-align: center;
   color: #624B3C;
 }
 
+/* Container positioning */
 .container {
   box-sizing: inherit;
   margin-right: auto;
@@ -323,20 +326,19 @@ p {
   display: flex;
 }
 
+/* Card color and positioning */
 .indexCard {
   margin: auto;
   background-color: rgba(251, 242, 220, 0.46);
   border-radius: 5px;
 }
 
-#landing {
-  width: fit-content;
-}
-
+/* Center title */
 #title {
   text-align: center;
 }
 
+/* Hidden elements style */
 .welcomeBack {
   text-align: center;
   font-family: 'Bad Script', cursive;
@@ -344,6 +346,7 @@ p {
   color: #624B3C;
 }
 
+/* Submit button positioning */
 #submit {
   width: 200px;
   margin-right: auto;
@@ -352,16 +355,19 @@ p {
   border-radius: 5px;
 }
 
+/* Button hover positioning */
 .select button:hover {
   text-align: center;
 }
 
+/* Hidden element positioning */
 #selectNextPage {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Workout Button design */
 #workoutBtn {
   width: 150px;
   height: 40px;
@@ -369,6 +375,7 @@ p {
   border-radius: 5px;
 }
 
+/* Nutrition Button design */
 #nutritionBtn {
   width: 150px;
   height: 40px;
@@ -376,6 +383,7 @@ p {
   border-radius: 5px;
 }
 
+/* Hide and Show: */
 .hide {
   display: none;
 }
@@ -388,6 +396,7 @@ p {
 
 /* NUTRITION.HTML START */
 
+/* Body stying and background image */
 .nutritionHtml {
   font-family: ‘Commissioner’, sans-serif;
   background-image: url(https://images.unsplash.com/photo-1501430654243-c934cec2e1c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
@@ -396,24 +405,24 @@ p {
   min-height: 150vh;
 }
 
-#nutrition {
-  background-color: #F4F2F0;
-}
-
+/* Label for input */
 #label {
   font-size: medium;
 }
 
+/* Button color and positioning */
 #find-food {
   cursor: pointer;
   background-color: #624B3C;
   border-radius: 5px;
 }
 
+/* Button positioning */
 .row-button {
   margin-right: 1rem !important;
 }
 
+/* Save Total Button color and positioning */
 #total-save {
   width: 15%;
   min-width: 100px;
@@ -425,6 +434,7 @@ p {
   border-radius: 5px;
 }
 
+/* Clear Total Button color and positioning */
 #clear-totals{
 width: 15%;
   min-width: 100px;
@@ -436,6 +446,7 @@ width: 15%;
   border-radius: 5px;
 }
 
+/* Graph Button color and positioning */
 #draw {
   width: 15%;
   min-width: 100px;
@@ -447,19 +458,23 @@ width: 15%;
   border-radius: 5px;
 }
 
+/* Border Radius for API content */
 #food-view {
   border-radius: 5px;
 }
 
+/* Table border for small views */
 table {
   border-collapse: unset;
 }
 
+/* Table contents color and sizing */
 td {
   background-color: hsl(34, 44%, 69%);
   border-radius: 5px;
 }
 
+/* Chart positioning */
 #curve_chart {
   margin-left: auto;
   margin-right: auto;
@@ -467,5 +482,3 @@ td {
 }
 
 /* NUTRITION.HTML STOP */
-
-
