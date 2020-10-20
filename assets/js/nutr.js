@@ -222,7 +222,8 @@ $("#find-food").on("click", function(event) {
   ////add row to table
     
   }).fail(function(error){
-    //console.log(error)});
+    //console.log(error)
+  });
 
 })
 
