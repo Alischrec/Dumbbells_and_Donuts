@@ -39,13 +39,11 @@ function getmetValues(type) {
 function caloriesBurned() {
   let calburnt = 0;
   var currentUser = JSON.parse(localStorage.getItem("userProfile"));
-  console.log(getmetValues(workoutType));
   calburnt =
     (currentUser.weight / 2.205) *
     getmetValues(workoutType) *
     0.0175 *
     parseInt(workoutLength);
-  console.log(Math.floor(calburnt));
   return Math.floor(calburnt);
 }
 
