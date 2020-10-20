@@ -1,29 +1,32 @@
 
 /* WORKOUT.HTML START */
 
+/* All html styling */
 html {
     /* Positioning */
     position: relative;
     align-content: center;
   }
-  
-  
-
+ 
+/* Individual cards */
 .card {
     margin: 2%;
     border-radius: 5px;
     background-color: rgba(251, 242, 220, 0.46);
 }
 
+/* Buttons */
 .button {
     border-radius: 5px;
     background-color: #624B3C;
 }  
 
+/* Image placement within card */
 img {
     margin-top: 10px;
 }
 
+/* Full style across the body */
 #main {
     transition: margin-left .5s;
     font-family: 'Commissioner', sans-serif;
@@ -34,12 +37,14 @@ img {
     background-repeat: no-repeat;
     min-height: 100vh;
 } 
-    
+
+/* Menu placement */
 .menu {
     padding-top: 10px;
     background-color: rgba(241, 224, 181, 0.46);
 }
 
+/* Logo placement for menu list */
 #logo {
     margin-right: 50%;
     padding: 0%;
@@ -54,7 +59,6 @@ h4 {
     font-family: 'Bad Script', cursive;
     color: #624B3C; 
     font-weight: bold;
-
 }
 
 h5 {
@@ -66,23 +70,26 @@ h5 {
     letter-spacing: 1px;
 }
 
+/* Darken card after selection */
 .workout-selected {
     background-color: #624B3C !important;
     color: rgba(251, 242, 220) !important;
 }
 
+/* Alignment */
 .align-center {
     text-align: center;
     align-items: center;
 }
 
+/* Style for menu verbiage */
 .top-icon {
     color: #624B3C;
     font-family: 'Bad Script', cursive;
     font-size: large;
-    
 }
 
+/* Color change when hovering over menu options */
 .top-icon:hover {
     background-color: #ede7d4;
     color: #2d2417;
@@ -94,40 +101,41 @@ h5 {
     outline: 0;
 }
 
+/* Removal of border */
 .border-none {
     border:none;
     background-color: transparent !important;
 }
 
+/* Button to view display after input */
 #show-workout {
-    /* background-color: rgba(251, 242, 220, 0.46);
-    color: #624B3C; */
     background-color: rgba(58, 36, 9, 0.6);
     color: #ede7d4;
     font-weight: bold;
     font-size: 140%;
     font-family: 'Bad Script', cursive;
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px;  
 }
 
+/* Button hover color change */
 #show-workout:hover {
     background-color: #624B3C;
     color: #ede7d4;   
-   
 }
 
+/* Add to library button colors */
 .bottom-button {
     background-color: rgba(58, 36, 9, 0.6) !important;
     color: #ede7d4 !important;
 }
 
+/* Add to libary hover color change */
 .bottom-button:hover {
     background-color: #624B3C !important;
     color: #ede7d4 !important;
 }
 
-
+/* Sidebar with library styling */
 .sidebar {
     height: 100%;
     width: 0;
@@ -135,7 +143,6 @@ h5 {
     z-index: 1;
     top: 0;
     left: 0;
-    /* background-color: rgba(251, 242, 220, 0.46); */
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -145,6 +152,7 @@ h5 {
     background-size: cover;
   }
 
+/* Sidebar Exit color */
   #sidebar-x {
     color: rgba(251, 242, 220);
   }
@@ -153,12 +161,13 @@ h5 {
     background-color: rgba(251, 242, 220, 0.2);
   }
 
-
+/* Sidebar styling */
   #my-workout-library {
       background-color:  rgba(251, 242, 220, 0.56);
       padding: 12px
   }
 
+/* Button */
   #add-to-library {
     font-family: 'Bad Script', cursive;
     letter-spacing: 1px;
@@ -166,11 +175,13 @@ h5 {
     font-size: 120%;
   }
 
+/* Calendar styling */
   #futureWorkoutTime {
       font-size: large;
       color: #624B3C;
   }
 
+/* Sidebar Exit button */
   .sidebar .closebtn {
     position: absolute;
     top: 0;
@@ -179,6 +190,7 @@ h5 {
     margin-left: 50px;
   }
 
+/* Button */
   .openbtn {
     font-size: 20px;
     cursor: pointer;
@@ -188,6 +200,7 @@ h5 {
     border: none;
   }
 
+/* Button hover color change */
   .openbtn:hover {
     background-color: #444;
   }
@@ -196,6 +209,7 @@ h5 {
     padding: 10px 10px 10px 10px;
   }
 
+/* Display for video information */
   .calories-display {
       padding: 20px;
       font-family: 'Commissioner', sans-serif;
@@ -204,9 +218,9 @@ h5 {
       font-size: large;
       background-color: rgba(251, 242, 220, 0.46);
       letter-spacing: 1px;
-
   }
 
+/* Text styling for length card */
 .workout-length {
     color: #2d2417;
     font-weight: bolder;
@@ -214,6 +228,7 @@ h5 {
     letter-spacing: 1px;
 }
 
+/* Text styling for type card */
 .workout-type {
     color: #2d2417;
     font-weight: bolder;
@@ -221,6 +236,7 @@ h5 {
     letter-spacing: 1px;
 }
 
+/* Paragraph styling */
 p {
     font-family: ‘Commissioner’, sans-serif;
     text-align: center;
@@ -230,14 +246,12 @@ p {
 
 /* media query for the user name in the menu */
 @media screen and (max-width: 1750px) {
-    
     #logo {
          margin-right: 50%;    
     }
 }
 
 @media screen and (max-width: 1580px) {
-    
     #logo {
          margin-right: 40%;    
     }
@@ -245,28 +259,24 @@ p {
 
 
 @media screen and (max-width: 1310px) {
-    
     #logo {
          margin-right: 30%;    
     }
 }
 
 @media screen and (max-width: 1130px) {
-    
     #logo {
          margin-right: 20%;    
     }
 }
 
 @media screen and (max-width: 980px) {
-    
     #logo {
          margin-right: 5%;    
     }
 }
 
 @media screen and (max-width: 830px) {
-    
     #logo {
          margin-right: 0%;  
          margin-left: 15px;  
@@ -275,13 +285,12 @@ p {
 
 /* WORKOUT.HTML ENDS */
 
-
+/* All html positioning */
 html {
   /* Positioning */
   position: relative;
   align-content: center;
 }
-
 
 /* INDEX.HTML START */
 
