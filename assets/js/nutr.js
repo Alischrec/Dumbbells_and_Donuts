@@ -275,5 +275,5 @@ $("#clear-totals").on("click",function(event){
   localStorage.removeItem("lastTotal");
   todayLast = false;
   $("#curve_chart").empty();
-  
+  window.location.href = "./nutrition.html";
 })
