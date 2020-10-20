@@ -21,22 +21,25 @@ View the [Github-pages](https://alischrec.github.io/Dumbbells_and_Donuts/)
 * [Acknowledgements](#acknowledgements)
 
 ## About the Project:
-<!-- The focus of this project was to use the AJAX call to create a weather dashboard. The project was to add searched items into local storage for later reference.   -->
-
+The focus of this project was to utilize two or more server-side APIs to build a positive interractive user experience. This project was broken down into a front-end and back-end team who worked in tandem to produce an interractive web-app. 
 
 <!-- ![Project Gif](assets/image/gif.gif)  -->
 
 ### HTML:
-<!-- * [index.html](https://github.com/Alischrec/WeatherDashboard_Hwk06/blob/main/index.html) -->
+ * [index.html](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/index.html)
+ * [nutrition.html](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/nutrition.html)
+ * [workout.html](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/workout.html)
 
 ### JAVASCRIPT:
-<!-- * [script.js](https://github.com/Alischrec/WeatherDashboard_Hwk06/blob/main/script.js) -->
+ * [script.js](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/js/script.js)
+ * [draw.js](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/js/draw.js)
+ * [nutr.js](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/js/nutr.js)
 
 ### CSS:
-<!-- * [script.css]() -->
+* [script.css](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/css/style.css)
 
 ### Built With:
-<!-- This app was built upon [Foundation Framework](https://get.foundation/sites/docs/index.html) and [jQuery](https://jquery.com/download/). -->
+This app was built upon [Foundation Framework](https://get.foundation/sites/docs/index.html), [jQuery](https://jquery.com/download/), [Youtube](https://developers.google.com/youtube/v3/getting-started), and [Edamam](https://developer.edamam.com/food-database-api-docs).
 
 ## Getting Started:
 To get a local copy up and running follow the steps below.
