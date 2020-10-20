@@ -36,7 +36,7 @@ The focus of this project was to utilize two or more server-side APIs to build a
  * [nutr.js](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/js/nutr.js)
 
 ### CSS:
-* [script.css](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/css/style.css)
+* [style.css](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/css/style.css)
 
 ### Built With:
 This app was built upon [Foundation Framework](https://get.foundation/sites/docs/index.html), [jQuery](https://jquery.com/download/), [Youtube](https://developers.google.com/youtube/v3/getting-started), and [Edamam](https://developer.edamam.com/food-database-api-docs).
