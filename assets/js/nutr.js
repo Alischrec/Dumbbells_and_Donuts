@@ -157,7 +157,9 @@ $("#find-food").on("click", function(event) {
       let nutr = response.totalNutrients;
       let cal = nutr.ENERC_KCAL;
       //console.log(cal);
-      let calorie =cal.quantity;
+      let calorie = 0;
+      if (cal){
+        calorie = cal.quantity;}
       
       let proteins = 0 ;
       if(nutr.PROCNT){
