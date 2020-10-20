@@ -194,7 +194,7 @@ $("#add-to-library").on("click", function (event) {
 function loadWorkoutLibrary() {
   $("#workout-videos-list").html("");
 
-  if (typeof localStorage.getItem("myworkouts") !== undefined) {
+  if (typeof localStorage.myworkouts !== "undefined") {
     let myworkOuts = JSON.parse(localStorage.getItem("myworkouts"));
 
     let mydiv = "";
@@ -279,6 +279,9 @@ $("#statsTab").on("click", function () {
     $("#cur-height-inch").html(currentStats.heightInch);
     $("#cur-weight").html(currentStats.weight);
     $("#cur-bmi").html(currentStats.bmi);
-    $("#current_stats").foundation("open");
   }
+   else {
+     $("#current_stats").html('<p> Stats not found!</p> <br> <p>Click here to return to <b><a href="../index.html">Homepage</a></b> if you wish to add your stats</p>')
+   }
+  $("#current_stats").foundation("open");
 });
