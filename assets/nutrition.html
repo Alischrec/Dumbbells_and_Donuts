@@ -23,12 +23,13 @@
     
  <!-- Menu Bar -->
     <ul class="vertical medium-horizontal small-horizontal menu" data-responsive-menu="drilldown small-dropdown">
-      <li class="menu-text" id="username"><a href="#">Dumbbells and Donuts</a></li>
-      <li id="workoutTab"><a href="workout.html"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
-      <li id="nutritionTab"><a href="nutrition.html"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
-      <li id="libraryTab"><a href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
-      <li id="statsTab"><a href="#"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
-    </ul>
+        <li class="menu-text" id="logo"><a class="top-icon" href="../index.html">Dumbbells and Donuts</a></li>
+        <li id="workoutTab"><a class="top-icon" href="workout.html"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
+        <li id="nutritionTab"><a class="top-icon" href="nutrition.html"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
+        <li id="libraryTab"><a class="top-icon" href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
+        <li id="statsTab"><a class="top-icon"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
+      </ul>
+      <br>
 
 
     <!-- Menu Bar -->
@@ -58,9 +59,9 @@
                                 value="Get Info">
                         </div>
                     </div>
+                      <div id="no-food"></div>
                 </div>
-                <!---delete later-->
-                <div id="no-food"></div>
+             
                 <div class='row'>
                     <table class="columns small-12 small-centered stack" style="width:100%" id="food-view">
                         <tr>
@@ -75,7 +76,7 @@
                     </table>
 
                     <table class="columns small-12 small-centered stack" style="width:100%" id="totals">
-                        <tr>
+<!--                         <tr>
                             <td>Food</td>
                             <td>Calories </td>
                             <td>Proteins</td>
@@ -83,7 +84,7 @@
                             <td>Carbs</td>
                             <td>Sugar</td>
                             <td>Fiber</td>
-                        </tr>
+                        </tr> -->
                         <tr >
                             <td> <b>Total</b> </td>
                             <td id="total-cal"> </td>
@@ -98,9 +99,14 @@
                         <button id='total-save' type="button" class="primary button expanded row-button">
                             Save Totals
                         </button>
-                        <button id='draw' type="button" class="primary button expanded row-button">
+                         <button id='draw' type="button" class="primary button expanded row-button">
                             See Graph
                         </button>
+                        <button id='clear-totals' type="button" class="primary button expanded row-button">
+                            Clear History
+                        </button>
+                       
+
                     </div>
                     <div id='curve_chart' style=" opacity: 0.7;width: fit-content;"></div>
                 </div>
