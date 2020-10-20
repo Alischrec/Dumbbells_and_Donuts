@@ -215,13 +215,14 @@ $("#find-food").on("click", function(event) {
       $("#food-view").append(new_row);
       renderTotal();
     }).fail(function(response){
-      console.log(response);
+      //console.log(response);
     });
     });
 
   ////add row to table
     
-  }).fail(function(error){console.log(error)});
+  }).fail(function(error){
+    //console.log(error)});
 
 })
 
