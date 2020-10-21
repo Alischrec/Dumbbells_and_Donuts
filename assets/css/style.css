@@ -249,11 +249,19 @@ p {
     #logo {
          margin-right: 50%;    
     }
+
+    #schedule-workout {
+      width: 50%
+    }
 }
 
 @media screen and (max-width: 1580px) {
     #logo {
          margin-right: 40%;    
+    }
+
+    #schedule-workout {
+      width: 50%
     }
 }
 
@@ -262,11 +270,27 @@ p {
     #logo {
          margin-right: 30%;    
     }
+
+    #schedule-workout {
+      width: 50%
+    }
 }
 
 @media screen and (max-width: 1130px) {
     #logo {
          margin-right: 20%;    
+    }
+
+    .card {
+        padding: 0%
+    }
+
+    #view-workout {
+      width: 100%;
+    }
+
+    #schedule-workout {
+      width: 60%
     }
 }
 
@@ -274,6 +298,20 @@ p {
     #logo {
          margin-right: 5%;    
     }
+
+    .card {
+      padding: 0%
+    }
+
+    #view-workout {
+      width: 100%;
+    }
+
+    #schedule-workout {
+      width: 50%
+    }
+
+    
 }
 
 @media screen and (max-width: 830px) {
@@ -281,6 +319,71 @@ p {
          margin-right: 0%;  
          margin-left: 15px;  
     }
+
+    .card {
+      padding: 0%
+    }
+
+    #view-workout {
+      width: 100%;
+    }
+
+    #schedule-workout {
+      width: 80%
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+  #logo {
+       margin-right: 0%;  
+       margin-left: 15px;  
+  }
+
+  .card {
+    padding: 0%
+  }
+
+  #show-workout {
+    width: 100%;
+    font-size: medium;
+  }
+
+  #view-workout {
+    content: hide;
+  }
+
+  #schedule-workout {
+    width: 100%
+  }
+
+  .workout-type {
+    padding: inherit;
+    
+  }
+
+  #hiit, #yoga, #zumba, #pilates {
+    padding: inherit;
+  }
+
+  .card>:last-child {
+    padding: 8%;
+    font-size: small;
+  }
+
+  /* Youtube Workout Video Sizing & Positioning */
+  /* .ytp-cued-thumbnail-overlay-image {
+    float: right;
+    width: 60%;
+    height: 80%;
+  } */
+
+  /* #display-video {
+    float: right;
+    width: 60%;
+    height: 80%;
+  } */
+
 }
 
 /* WORKOUT.HTML ENDS */
