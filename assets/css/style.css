@@ -567,9 +567,9 @@ width: 15%;
 }
 
 /* Table border for small views */
-/* table {
+table {
   border-collapse: unset;
-} */
+}
 
 /* Table contents color and sizing */
 td {
