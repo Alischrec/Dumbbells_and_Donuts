@@ -11,6 +11,7 @@ View the [Github-pages](https://alischrec.github.io/Dumbbells_and_Donuts/)
   * [JavaScript](#JAVASCRIPT)
   * [CSS](#CSS)
   * [Built With](#built-with)
+  * [Team](#team)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
   * [Installation](#installation)
@@ -39,7 +40,13 @@ The focus of this project was to utilize two or more server-side APIs to build a
 * [style.css](https://github.com/Alischrec/Dumbbells_and_Donuts/blob/main/assets/css/style.css)
 
 ### Built With:
-This app was built upon [Foundation Framework](https://get.foundation/sites/docs/index.html), [jQuery](https://jquery.com/download/), [Youtube](https://developers.google.com/youtube/v3/getting-started), and [Edamam](https://developer.edamam.com/food-database-api-docs).
+This app was built upon [Foundation Framework](https://get.foundation/sites/docs/index.html), [jQuery](https://jquery.com/download/), [Youtube](https://developers.google.com/youtube/v3/getting-started), and [Edamam](https://developer.edamam.com/food-database-api-docs).  
+  
+### Team
+* [Ali Schreck](https://github.com/Alischrec)
+* [Jessica Tzunu Huang](https://github.com)
+* [Garima Gupta](https://github.com/garimaggupta)
+* [Olga Illarionova](https://github.com)
 
 ## Getting Started:
 To get a local copy up and running follow the steps below.
