@@ -1,4 +1,4 @@
-
+let isDrawed = false;
 
 
 function drawChart() {
@@ -22,6 +22,7 @@ function drawChart() {
 }
 
 $("#draw").on("click", function(event){
+  if(!isDrawed){
     google.charts.load('current', {'packages':['corechart']});
     days = JSON.parse(localStorage.getItem("daysHist"));
     cals = JSON.parse(localStorage.getItem("calHist"));
@@ -33,4 +34,11 @@ $("#draw").on("click", function(event){
     }
     else{
         google.charts.setOnLoadCallback(drawChart);}
+    isDrawed = true;
+  }
+  else{
+    $("#curve_chart").empty()
+    isDrawed = false
+  }
+
 })
