@@ -4,14 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Compressed CSS -->
+  <!-- Foundation Framework -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous" />
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!-- Style Sheet -->
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- Foundation JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
   <title>Dumbbells & Donuts</title>
@@ -20,7 +23,6 @@
 <body>
 
   <main id="main">
-
     <!-- Side Bar -->
     <div id="mySidebar" class="sidebar">
       <a id="sidebar-x" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
@@ -52,9 +54,10 @@
         </ul>
       </li>
     </ul>
+  
     <br>
 
-    <!-- status modal -->
+    <!-- Status Modal -->
     <div class="reveal" id="current_stats" data-reveal>
       <h2 class="align-center">Your current Stats</h2>
       <p class="lead"><b>Height: <span id="cur-height-feet">5</span> feet <span id="cur-height-inch">3</span> inches</b></p>
@@ -67,7 +70,7 @@
       </button>
     </div>
 
-    <!-- workout length and type modal -->
+    <!-- Workout length and type modal -->
     <div class="reveal" id="choose_type_length" data-reveal>
       <p>Please choose Workout type and length to continue</p>
       <button class="close-button" data-close aria-label="Close modal" type="button">
@@ -143,7 +146,7 @@
     <br>
 
 
-    <!-- search workout button & text area-->
+    <!-- Search workout button & text area-->
     <div class="grid-x grid-padding-x align-center">
       <div class="cell small-4 border-none" id="view-workout">
 
@@ -158,13 +161,12 @@
       </div>
     </div> 
   
-
     <br>
-
 
     <!-- Display  -->
 
     <div class="grid-x grid-padding-x align-center responsive-video">
+
       <!-- hide & unhide -->
       <div class="card cell border-none hide align-center"  id="video-card">
         <div id="display-video"></div>
@@ -172,8 +174,7 @@
       <!-- hide & unhide -->
     </div>
   
-
-      <!-- calender section -->
+    <!-- calender section -->
     <div class="grid-x grid-padding-x align-center">
         <div class="cell small-1"></div>
       <div class="card cell small-4 vertical medium-horizontal small-horizontal hide" id="schedule-workout">
@@ -206,8 +207,6 @@
     </div>
     <br>
     <br>
-
-
   </main>
 
   <script src="js/script.js"></script>
@@ -220,7 +219,6 @@
     });
   </script>
 
-  
 </body>
 
 </html>
