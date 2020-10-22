@@ -5,48 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dumbbells & Donuts</title>
+    <!-- Foundation Framework -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation-float.min.css"
         integrity="sha256-4ldVyEvC86/kae2IBWw+eJrTiwNEbUUTmN0zkP4luL4=" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap" rel="stylesheet" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
-    <!-- Jessica Added -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- Style Sheet -->
     <link rel="stylesheet" href="css/style.css">
-    <!-- Jessica Added -->
+    <!-- Foundation JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
-  
+
 </head>
 
 <body class='nutritionHtml'>
-    
- <!-- Menu Bar -->
-    <ul class="vertical medium-horizontal small-horizontal menu" data-responsive-menu="drilldown small-dropdown">
-        <li class="menu-text" id="logo"><a class="top-icon" href="../index.html">Dumbbells and Donuts</a></li>
-        <li id="workoutTab"><a class="top-icon" href="workout.html"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
-        <li id="nutritionTab"><a class="top-icon" href="nutrition.html"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
-        <li id="libraryTab"><a class="top-icon" href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
-        <li id="statsTab"><a class="top-icon"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
-      </ul>
-      <br>
 
+    <!-- Side Bar -->
+    <div id="mySidebar" class="sidebar">
+        <a id="sidebar-x" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h4 class="align-center" id="my-workout-library">My Workout Library</h4>
+        <div id="workout-videos-list" class="align-center">
+        </div>
+    </div>
 
     <!-- Menu Bar -->
     <ul class="vertical medium-horizontal small-horizontal menu" data-responsive-menu="drilldown small-dropdown">
-        <li class="menu-text" id="logo"><a class="top-icon" href="index.html">Dumbbells and Doughnuts</a></li>
-        <li id="workoutTab"><a class="top-icon" href="workout.html"><i class="fas fa-dumbbell"></i> &nbsp Workout</a></li>
-        <li id="nutritionTab"><a class="top-icon" href="nutrition.html"><i class="fas fa-utensils"></i> &nbsp Nutrition</a></li>
+        <li class="menu-text" id="logo"><a class="top-icon" href="../index.html">Dumbbells and Donuts</a></li>
+        <li id="workoutTab"><a class="top-icon" href="workout.html"><i class="fas fa-dumbbell"></i> &nbsp Workout</a>
+        </li>
+        <li id="nutritionTab"><a class="top-icon" href="nutrition.html"><i class="fas fa-utensils"></i> &nbsp
+                Nutrition</a></li>
         <li id="libraryTab"><a class="top-icon" href="#"><i class="fas fa-book-open"></i> &nbsp Library</a></li>
         <li id="statsTab"><a class="top-icon"><i class="fas fa-battery-full"></i></i> &nbsp Check Stats</a></li>
-      </ul>
-      <br>
 
-    <div class='container'>
+    </ul>
+    <br>
+
+    <!-- status modal -->
+    <div class="reveal" id="current_stats" data-reveal>
+        <h2 class="align-center">Your current Stats</h2>
+        <p class="lead"><b>Height: <span id="cur-height-feet">5</span> feet <span id="cur-height-inch">3</span>
+                inches</b>
+        </p>
+        <p class="lead"><b>Weight: <span id="cur-weight">120</span> pounds</b></p>
+        <p class="lead"><b>BMI: <span id="cur-bmi">20.32</span></b></p>
+        <br>
+        <p>Click here to return to <b><a href="../index.html">Homepage</a></b> if you wish to update your stats</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <main class='container'>
         <div class="card-section small-12 small-centered">
             <br>
             <h2 id='title'> Let's talk Nutrition!</h2>
             <p> Enter in what you ate today, and we will calculate the nutritional value for you!</p>
+            <!-- Form for user to enter food eaten: -->
             <form id="food-form">
                 <div class='row' id='input'>
                     <label id='label'>
@@ -54,14 +72,16 @@
                     </label>
                     <div class="input-group">
                         <input class="input-group-field" type="text" id='food-input'>
+                        <!-- Button to search API -->
                         <div class="input-group-button">
                             <input id='find-food' type="button" class="primary button expanded search-button"
                                 value="Get Info">
                         </div>
                     </div>
-                      <div id="no-food"></div>
+                    <!-- Display message when food is not found within the API -->
+                    <div id="no-food"></div>
                 </div>
-             
+                <!-- Table to display food's nutritional value -->
                 <div class='row'>
                     <table class="columns small-12 small-centered stack" style="width:100%" id="food-view">
                         <tr>
@@ -74,18 +94,9 @@
                             <td>Fiber</td>
                         </tr>
                     </table>
-
+                    <!-- Table to display total nutritional value for searched items -->
                     <table class="columns small-12 small-centered stack" style="width:100%" id="totals">
-<!--                         <tr>
-                            <td>Food</td>
-                            <td>Calories </td>
-                            <td>Proteins</td>
-                            <td>Fats</td>
-                            <td>Carbs</td>
-                            <td>Sugar</td>
-                            <td>Fiber</td>
-                        </tr> -->
-                        <tr >
+                        <tr>
                             <td> <b>Total</b> </td>
                             <td id="total-cal"> </td>
                             <td id="total-pr"> </td>
@@ -95,40 +106,46 @@
                             <td id="total-fiber"></td>
                         </tr>
                     </table>
-                    <div  style='display:flex'>
+                    <!-- Buttons: -->
+                    <div style='display:flex'>
                         <button id='total-save' type="button" class="primary button expanded row-button">
                             Save Totals
                         </button>
-                         <button id='draw' type="button" class="primary button expanded row-button">
+                        <button id='draw' type="button" class="primary button expanded row-button">
                             See Graph
                         </button>
                         <button id='clear-totals' type="button" class="primary button expanded row-button">
                             Clear History
                         </button>
-                       
 
                     </div>
+                    <!-- Display Chart -->
                     <div id='curve_chart' style=" opacity: 0.7;width: fit-content;"></div>
                 </div>
             </form>
 
             <div id="edamam-badge" data-color="beige"></div>
         </div>
-    </div>
+    </main>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
     <!-- Foundation JS  -->
     <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
         integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+    <!-- Local Script Files and APIs -->
     <script src="./js/nutr.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src ="./js/draw.js"> </script>
+    <script src="./js/draw.js"> </script>
     <script src="https://developer.edamam.com/attribution/badge.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(document).foundation();
+        });
+    </script>
 </body>
 
 </html>
