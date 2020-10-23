@@ -167,7 +167,7 @@ $("#show-workout").on("click", function (event) {
 
       // display video, calories burnt, add to library and schedule workout options 
       $("#display-video").html(videoFrame);
-      $("#video-card").attr("class", "card-video cell small-4 show");
+      $("#video-card").attr("class", "card-video cell show");
       $("#schedule-workout").attr("class", "card cell small-4 show");
       $("#calories-info").attr("class", "card cell small-4 border-none show");
     });
